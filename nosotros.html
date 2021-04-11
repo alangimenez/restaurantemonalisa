@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Monalisa</title>
+    <link href="imagenes/iconoMini.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="margin">
+        <!--Header-->
+
+
+        <header>
+            <nav class="home__nav">
+
+                <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
+                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
+                            un boton que desplega el menu para pantalla pequeña-->
+
+                <!--Primer menu-->
+
+                <div id="home__nav__section__one" class="home__nav__section">
+                    <a href="index.html">Inicio</a>
+                </div>
+                <div id="home__nav__section__two" class="home__nav__section">
+                    <a href="nosotros.html">Nosotros</a>
+                </div>
+                <div id="home__nav__section__three" class="home__nav__section">
+                    <a href="menu.html">Cartas</a>
+                </div>
+                <div id="home__nav__section__four">
+                    <img src="imagenes/logoPagina.png" id="logoPagina">
+                </div>
+                <div id="home__nav__section__five" class="home__nav__section">
+                    <a href="galeria.html">Galeria</a>
+                </div>
+                <div id="home__nav__section__six" class="home__nav__section">
+                    <a href="error.html">Beneficios</a>
+                </div>
+                <div id="home__nav__section__seven" class="home__nav__section">
+                    <a href="contacto.html">Contacto</a>
+                </div>
+
+                <!--Segundo menu-->
+
+                <div class="home__nav__section__eight" style="float:right;">
+                    <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
+                            id="menu__img"></button>
+                    <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="menu.html">Cartas</a>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="error.html">Beneficios</a>
+                        <a href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
+
+
+    <!--Nuestra historia-->
+    <!--Posee 2 grids, uno adentro del otro. En pantalla grande y mediana, se debe ver un grid
+            de 2 columnas,y en la columna izquierda debe haber un grid de 2 filas. En pantalla chica, 
+            debe verse todo en filas, para verse uno abajo del otro-->
+
+    <section class="history" id="history">
+        <h2 class="history__title wow animate__animated animate__bounceInUp">Nuestra historia y nuestros valores</h2>
+
+        <!--Este es el grid general-->
+
+        <div class="history__text">
+
+            <!--Este es el grid pequeño (parte izquierda del grid general)-->
+
+            <div class="history__text__left">
+                <div class="history__text__left__img">
+                    <img id="history__img" src="imagenes/decoro1.png" alt="Imagen no definida">
+                </div>
+                <div class="history__text__left__explain">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras augue
+                        risus, laoreet molestie elit eu, consequat molestie quam. Fusce in mi efficitur,
+                        faucibus dolor sed, tincidunt dolor. Aliquam convallis rutrum vestibulum. Phasellus
+                        blandit viverra nulla, at venenatis mauris scelerisque porta. Nulla euismod dui non
+                        risus iaculis vulputate. Etiam augue quam, tristique non mauris vitae, vestibulum
+                        egestas turpis. Vestibulum egestas suscipit odio, et malesuada neque euismod sit
+                        amet. Nulla facilisis vitae justo eu viverra.
+                    </p>
+                </div>
+            </div>
+
+            <!--parte derecha del grid general-->
+
+            <div class="history__text__right">
+                <div id="valor1" class="history__text__right__value">Pasión</div>
+                <div id="valor2" class="history__text__right__value">Profesionalismo</div>
+                <div id="valor3" class="history__text__right__value">Agradecimiento</div>
+                <div id="valor4">Cada uno de nuestros empleados y chefs está siempre
+                    predispuesto a dar lo mejor de sí mismo, buscando que nuestros
+                    clientes disfruten de una gran experiencia.</div>
+                <div id="valor5">Todo nuestro staff, desde el jefe de cocina hasta cada uno de
+                    los camarareros, están capacitados y preparados para
+                    brindar un servicio de excelencia a cada uno de nuestros comensales.</div>
+                <div id="valor6">Entre todos los que hacemos posible este proyecto, les
+                    agradecemos a todos nuestros clientes que nos eligen día tras día,
+                    dado que sin ustedes, nada de esto sería posible.</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Dirección: Avenida 9 de Julio s/n</p>
+            <p>Teléfono: 4444-7777</p>
+            <p>Email: contactenos@monalisa.com.ar</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h3>Nuestras secciones</h3>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Cartas</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="error.html">Beneficios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div>
+            <p>Todos los derechos reservados. <br>2021. Creado por Alan Gimenez</p>
+        </div>
+    </footer>
+</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

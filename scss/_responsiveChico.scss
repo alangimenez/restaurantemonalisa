@@ -1,0 +1,115 @@
+/*----------------------------------------------------------------*/
+/*---------------parte responsive pantalla chica----------------*/
+/*----------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px){
+
+    /*----------------------------------------------------------------*/
+    /*------------------------aplica a header-------------------------*/
+    /*----------------------------------------------------------------*/
+    
+    
+    /*----------------------------------------------------------------*/
+    /*------------------------nuestra historia------------------------*/
+    /*----------------------------------------------------------------*/
+    
+        #hist{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .history__text__left__img{
+            flex-basis: 50%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .history__text__left__explain{
+            flex-basis: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .history__text__right{
+            display: grid;
+            grid-column: 1;
+            grid-row: 6;
+            grid-template-areas: 
+                "valor1"
+                "valor4"
+                "valor2"
+                "valor5"
+                "valor3"
+                "valor6";
+            grid-column-gap: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    
+    /*----------------------------------------------------------------*/
+    /*------------------------beneficios------------------------------*/
+    /*----------------------------------------------------------------*/
+    
+        .beneficio__intern{
+            display: grid;
+            grid-column: 1;
+            grid-row: 8;
+            grid-template-areas: 
+                "beneficio9"
+                "beneficio1" 
+                "beneficio4"
+                "beneficio10" 
+                "beneficio2" 
+                "beneficio5"
+                "beneficio11" 
+                "beneficio3"
+                "beneficio6"
+                "beneficio12" 
+                "beneficio7" 
+                "beneficio8";
+            grid-column-gap: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    
+    /*----------------------------------------------------------------*/
+    /*------------------------Galeria---------------------------------*/
+    /*----------------------------------------------------------------*/  
+    
+    
+    /*----------------------------------------------------------------*/
+    /*------------------------contacto--------------------------------*/
+    /*----------------------------------------------------------------*/    
+    
+        #maps{
+            height: 300px;
+        }
+        .botonMenu{
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+        }
+        .botonMenu:hover{
+            background-color: transparent !important;
+            color: black !important;
+            border: 1px solid black;
+        }
+        .botonMenu:focus{
+            background-color: black !important;
+            color: white !important;
+            border: 1px solid black;
+        }
+    
+        .location__box{
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            background-color: black;
+            display: flex; 
+            flex-direction: column;
+        }
+        .location__box__right{
+            width: auto;
+        }
+        .location__box__left{
+            width: auto;
+            height: unset;
+        }
+    }

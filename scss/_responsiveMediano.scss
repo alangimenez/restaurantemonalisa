@@ -1,0 +1,140 @@
+/*----------------------------------------------------------------*/
+/*---------------parte responsive pantalla mediana----------------*/
+/*----------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+
+/*----------------------------------------------------------------*/
+/*------------------------header----------------------------------*/
+/*----------------------------------------------------------------*/
+
+.home__nav__section{
+    display: none;
+  }
+  .home__nav__section__eight__btn {
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 5rem;
+  }
+  
+  .home__nav__section__eight {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+  }
+  
+  .home__nav__section__eight__content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .home__nav__section__eight__content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .home__nav__section__eight__content a:hover 
+    {background-color: #f1f1f1;
+    }
+  .home__nav__section__eight:hover .home__nav__section__eight__content {
+    display: block;}
+
+  .home__nav__section__eight:hover .home__nav__section__eight__btn {
+    background-color: rgb(196, 195, 195);}
+    
+  #menu__img{
+    background-color: transparent !important;
+    width: 100%;
+  }
+  .home__nav__section__eight__content--desplegable{
+    right: -50%;
+  }
+
+/*----------------------------------------------------------------*/
+/*------------------------nuestra historia------------------------*/
+/*----------------------------------------------------------------*/
+
+    #cuadrosHaV{
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-row: 1;
+        grid-template-areas: 
+            "hist1 hist2 hist3";
+        padding-bottom: 4rem;
+    }    
+    #hist{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .history__text__left__img{
+        flex-basis: 50%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .history__text__left__explain{
+        flex-basis: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+/*----------------------------------------------------------------*/
+/*------------------------galeria de imagenes---------------------*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*------------------------beneficios------------------------------*/
+/*----------------------------------------------------------------*/
+
+    .beneficio__intern{
+        display: grid;
+        grid-column: 2;
+        grid-row: 6;
+        grid-template-areas: 
+            "beneficio9 beneficio10"
+            "beneficio1 beneficio2"
+            "beneficio4 beneficio5" 
+            "beneficio11 beneficio12"
+            "beneficio3 beneficio7" 
+            "beneficio6 beneficio8";
+        grid-column-gap: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+   
+/*----------------------------------------------------------------*/
+/*------------------------contacto--------------------------------*/
+/*----------------------------------------------------------------*/
+
+    .location__box__right__social{
+        width: 2.0rem;
+        height: 2.0rem;
+    }
+    .location__box{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        background-color: black;
+        display: flex; 
+        flex-direction: column;
+    }
+    .location__box__right{
+        width: auto;
+    }
+    .location__box__left{
+        width: auto;
+        height: 20rem;
+    }
+}

@@ -1,0 +1,56 @@
+/*----------------------------------------------------------------*/
+/*------------------------aplica a header-------------------------*/
+/*----------------------------------------------------------------*/
+
+#iconoDePagina{
+    height: 6rem;
+}
+nav{
+    height: 7rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.12rem;
+    background-color: rgb(228, 228, 228);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+header{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+#logoPagina{
+    height: 5rem;
+}
+.home{
+    background-image: url(imagenes/fondo-nombre-rest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.home1_img{
+    width: 100%;
+    height: auto;
+}
+
+.home__nav__section:hover{
+    transform: scale(1.45,1.45);
+    transition: 1s;
+}
+.home__title{
+    padding-top: 10%;
+    padding-bottom: 50%;
+    margin-bottom: 0;
+}
+h1{
+    font-size: 50px;
+    color: black;
+}
+.home__nav__section__eight{
+    display: none;
+  }
+.animate__animated.animate__zoomIn{
+    --animate-duration: 3.5s;
+}

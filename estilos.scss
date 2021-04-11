@@ -1,0 +1,33 @@
+/*----------------------------------------------------------------*/
+/*------------------aplica a toda la pagina-----------------------*/
+/*----------------------------------------------------------------*/
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: 'Zilla Slab', serif !important;
+}
+a{
+    text-decoration: none ;
+    color: black ;
+}
+.margin{
+    margin: 5%;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 0 0 1rem 0.75rem   black;
+}
+
+@import "scss/_inicio";
+@import "scss/_historia";
+@import "scss/_menu";
+@import "scss/_galeria";
+@import "scss/_beneficio";
+@import "scss/_contactenos";
+@import "scss/_footer";
+@import "scss/_responsiveMediano";
+@import "scss/_responsiveChico";
+@import "scss/_error";

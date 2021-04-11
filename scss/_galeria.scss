@@ -1,0 +1,210 @@
+/*----------------------------------------------------------------*/
+/*------------------------galeria de imagenes---------------------*/
+/*----------------------------------------------------------------*/
+
+#galeria{
+    background-color: white;
+    justify-content: center;
+}
+.galeria__titulo{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.galeria__recuadro{
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 4rem;
+    height: 1000px;
+    width: 912px;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.galeria__recuadro__img{
+    width: 18rem;
+    height: 14rem;
+    margin: 0.2vh 0.2vw 0.2vh 0.2vw;
+    border-radius: 2.5%;
+    transition: 0.2s linear;
+}
+.img{
+    position: absolute;
+    width: 290px;
+    height: 225px;
+    margin: 10px;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.img1{
+    margin-left: 10px;
+}
+
+.img2{
+    margin-left: 310px;
+}
+.img3{
+    margin-left: 610px;
+}
+.img4{
+    margin-top: 244px;
+    margin-left: 10px;
+}
+.img5{
+    margin-top: 244px;
+    margin-left: 310px;
+}
+.img6{
+    margin-top: 244px;
+    margin-left: 610px;
+}
+.img7{
+    margin-top: 478px;
+    margin-left: 10px;
+}
+.img8{
+    margin-top: 478px;
+    margin-left: 310px;
+}
+.img9{
+    margin-top: 478px;
+    margin-left: 610px;
+}
+.img10{
+    margin-top: 712px;
+    margin-left: 10px;
+}
+.img11{
+    margin-top: 712px; 
+    margin-left: 310px;
+}
+.img12{
+    margin-top: 712px;
+    margin-left: 610px;
+}
+.comida{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 290px;
+    height: 225px;
+    line-height: 225px;
+    opacity: 0%;
+    transition: 1s all;
+}
+.comida:hover{
+    opacity: 100%;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 1s all;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 1050px){
+    .galeria__recuadro{
+        width: 600px;
+        height: 1500px;
+        transition-duration: 1s;
+        transition-property: all;
+    }
+    .img{
+        transition-duration: 1s;
+        transition-property: all;
+    }
+    .img1{
+        margin-left: 10px;
+    }
+
+    .img2{
+        margin-left: 310px;
+    }
+    .img3{
+        margin-left: 10px;
+        margin-top: 244px;
+    }
+    .img4{
+        margin-top: 244px;
+        margin-left: 310px;
+    }
+    .img5{
+        margin-top: 478px;
+        margin-left: 10px;
+    }
+    .img6{
+        margin-top: 478px;
+        margin-left: 310px;
+    }
+    .img7{
+        margin-top: 712px;
+        margin-left: 10px;
+    }
+    .img8{
+        margin-top: 712px;
+        margin-left: 310px;
+    }
+    .img9{
+        margin-top: 946px;
+        margin-left: 10px;
+    }
+    .img10{
+        margin-top: 946px;
+        margin-left: 310px;
+    }
+    .img11{
+        margin-top: 1180px; 
+        margin-left: 10px;
+    }
+    .img12{
+        margin-top: 1180px;
+        margin-left: 310px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .galeria__recuadro{
+        width: 300px;
+        height: 2900px;
+        transition-duration: 1s;
+        transition-property: all;
+    }
+    .img{
+        transition-duration: 1s;
+        transition-property: all;
+        margin-left: 10px;
+    }
+    .img1{
+        margin-top: 10px;
+    }
+
+    .img2{
+        margin-top: 244px;
+    }
+    .img3{
+        margin-top: 478px;
+    }
+    .img4{
+        margin-top: 712px;
+    }
+    .img5{
+        margin-top: 946px;
+    }
+    .img6{
+        margin-top: 1180px;
+    }
+    .img7{
+        margin-top: 1414px;
+    }
+    .img8{
+        margin-top: 1648px;
+    }
+    .img9{
+        margin-top: 1882px;
+    }
+    .img10{
+        margin-top: 2116px;
+    }
+    .img11{
+        margin-top: 2350px;
+    }
+    .img12{
+        margin-top: 2584px;
+    }
+}

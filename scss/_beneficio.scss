@@ -1,0 +1,89 @@
+/*----------------------------------------------------------------*/
+/*-------------------beneficios para clientes---------------------*/
+/*----------------------------------------------------------------*/
+
+.beneficio{
+    background-image: url(imagenes/imgBencopy.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.beneficio__title{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.beneficio__intern{
+    display: grid;
+    grid-column: 4;
+    grid-row: 3;
+    grid-template-areas: 
+        "beneficio9 beneficio10 beneficio11 beneficio12"
+        "beneficio1 beneficio2 beneficio3 beneficio7"
+        "beneficio4 beneficio5 beneficio6 beneficio8";
+    grid-column-gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 4rem;
+}
+.beneficio__intern__item{
+    border-radius: 50px;
+    padding: 1rem;
+    transition: 1s;
+}
+.beneficio__intern__item:hover{
+    background-color: rgba(131, 131, 131, 0.514);
+    transition: 1s;
+}
+.beneficio__intern__title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.beneficio__intern__text{
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+#beneficio1{
+    grid-area: beneficio1;
+}
+#beneficio2{
+    grid-area: beneficio2;
+}
+#beneficio3{
+    grid-area: beneficio3;
+}
+#beneficio4{
+    grid-area: beneficio4;
+}
+#beneficio5{
+    grid-area: beneficio5;
+}
+#beneficio6{
+    grid-area: beneficio6;
+}
+#beneficio7{
+    grid-area: beneficio7;
+}
+#beneficio8{
+    grid-area: beneficio8;
+}
+#beneficio9{
+    grid-area: beneficio9;
+}
+#beneficio10{
+    grid-area: beneficio10;
+}
+#beneficio11{
+    grid-area: beneficio11;
+}
+#beneficio12{
+    grid-area: beneficio12;
+}
+.beneficio__intern__img{
+    justify-self: center;
+    align-self: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.beneficio__intern__img--format{
+    width: 50%;
+    height: 50%;
+}
