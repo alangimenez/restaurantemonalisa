@@ -1,0 +1,16 @@
+.franquicia_titulo{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.franquicia_contenido{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.franquicia_contenido_item{
+    width: 50%;
+}
+.franquicia_contenido_item_der{
+    padding-left: 5%;
+    padding-right: 5%;
+}

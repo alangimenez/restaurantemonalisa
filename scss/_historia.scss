@@ -4,6 +4,10 @@
 
 .history{
     background-color: white;
+    p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 .history__title{
     padding-top: 4rem;
@@ -88,4 +92,53 @@
 #valor6{
     grid-area: valor6;
     margin-bottom: 2rem;
+}
+.history_fotos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.history_fotos_img{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.history_fotos_img_hover{
+    opacity: 0%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 400px;
+    height: 700px;
+    transition: 1s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.history_fotos_img_hover:hover{
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    transition: 0.5s;
+}
+.history_principios{
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+.history_principios_item{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50px;
+}
+.history_carousel{
+    height: 5rem;
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
 }

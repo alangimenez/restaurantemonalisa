@@ -28,56 +28,69 @@
     <div class="margin">
         <!--Header-->
 
-        
-            <header>
-                <nav class="home__nav">
 
-                    <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
+        <header>
+            <nav class="home__nav">
+
+                <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
                             y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
                             un boton que desplega el menu para pantalla pequeña-->
 
-                    <!--Primer menu-->
+                <!--Primer menu-->
 
-                    <div id="home__nav__section__one" class="home__nav__section">
-                        <a href="index.html">Inicio</a>
-                    </div>
-                    <div id="home__nav__section__two" class="home__nav__section">
-                        <a href="nosotros.html">Nosotros</a>
-                    </div>
-                    <div id="home__nav__section__three" class="home__nav__section">
-                        <a href="menu.html">Cartas</a>
-                    </div>
-                    <div id="home__nav__section__four">
-                        <img src="imagenes/logoPagina.png" id="logoPagina">
-                    </div>
-                    <div id="home__nav__section__five" class="home__nav__section">
-                        <a href="galeria.html">Galeria</a>
-                    </div>
-                    <div id="home__nav__section__six" class="home__nav__section">
-                        <a href="error.html">Beneficios</a>
-                    </div>
-                    <div id="home__nav__section__seven" class="home__nav__section">
-                        <a href="contacto.html">Contacto</a>
-                    </div>
-
-                    <!--Segundo menu-->
-
-                    <div class="home__nav__section__eight" style="float:right;">
-                        <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
-                                id="menu__img"></button>
-                        <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                <div class="home__nav__section__four">
+                    <img src="imagenes/logoPagina.png" id="logoPagina">
+                </div>
+                <div class="home_nav_section_otros">
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__one" class="home__nav__section">
                             <a href="index.html">Inicio</a>
+                        </div>
+                        <div id="home__nav__section__two" class="home__nav__section">
                             <a href="nosotros.html">Nosotros</a>
-                            <a href="menu.html">Cartas</a>
+                        </div>
+                        <div id="home__nav__section__three" class="home__nav__section">
+                            <a href="menuv2.html">Cartas</a>
+                        </div>
+                        <div id="home__nav__section__five" class="home__nav__section">
                             <a href="galeria.html">Galeria</a>
-                            <a href="error.html">Beneficios</a>
-                            <a href="contacto.html">Contacto</a>
                         </div>
                     </div>
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__six" class="home__nav__section">
+                            <a href="beneficios.html">Beneficios</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="reservaciones.html">Reservaciones</a>
+                        </div>
+                        <div id="home__nav__section__seven" class="home__nav__section">
+                            <a href="contacto.html">Contacto</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="error.html">Idioma</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Segundo menu-->
 
-                </nav>
-            </header>
-            <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
+                <div class="home__nav__section__eight" style="float:right;">
+                    <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
+                            id="menu__img"></button>
+                    <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="menuv2.html">Cartas</a>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="beneficios.html">Beneficios</a>
+                        <a href="reservaciones.html">Reservaciones</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="error.html">Idioma</a>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
         <!--Contactenos-->
         <!--Un grid de 2 columnas, que al achicar pantalla se transforma en 1 columna de 2 filas,
             con el mapa primero y datos de contacto y formulario de contacto despues. El formulario
@@ -92,14 +105,18 @@
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="location__box__right">
-                    <h4 class="location__box__right__title">Nuestra dirección y horarios</h4>
-                    <p class="location__box__right__dates">Dirección: Avenida 9 de Julio s/n</p>
-                    <p class="location__box__right__dates">Telefono: 4444-7777</p>
-                    <p class="location__box__right__dates">Horarios: Lunes a Jueves de 11hs a 24hs. Viernes a Domingos
+                    <h4 class="location_minititle">Nuestra dirección</h4>
+                    <p class="location__box__right__dates">Avenida 9 de Julio s/n</p>
+                    <h4 class="location_minititle">Nuestro telefono</h4>
+                    <p class="location__box__right__dates">Telefono: 4444-7777. Celular: 11-2222-3333</p>
+                    <h4 class="location_minititle">Nuestros horarios</h4>
+                    <p class="location__box__right__dates">Lunes a Jueves de 11hs a 24hs. Viernes a Domingos
                         de
                         10hs a
                         02hs.</p>
-                    <h4 class="location__box__right__title">Nuestras redes</h4>
+                    <h4 class="location_minititle">Nuestro e-mail</h4>
+                    <p class="location__box__right__dates">contactenos@monalisa.com.ar</p>
+                    <h4 class="location_minititle">Nuestras redes</h4>
                     <ul>
                         <li><a href="#start"><img src="imagenes/logoFacebook.png" alt="Facebook"
                                     class="location__box__right__social">
@@ -113,58 +130,67 @@
                                     class="location__box__right__social"></a></li>
                         <li>¡Contactanos!</li>
                     </ul>
-                    <h4 class="location__box__right__title">Contactenos</h4>
-                    <div class="location__box__right__form">
-                        <form class="row g-3 location__box__right__form__complete">
-                            <div class="col-12 col-12-manual">
-                                <input type="text" id="inputname" placeholder="Nombre">
-                            </div>
-                            <div class="col-12 col-12-manual">
-                                <input type="email" id="inputemail" placeholder="E-mail">
-                            </div>
-                            <div class="col-12 col-12-manual">
-                                <input type="text" id="inputTelefono" placeholder="Telefono">
-                            </div>
-                            <div class="col-12 col-12-manual">
-                                <input type="text" id="inputMotivoConsulta" placeholder="Motivo de consulta">
-                            </div>
-                            <div class="col-12 col-12-manual">
-                                <textarea id="inputTextoConsulta" placeholder="Ingrese su consulta"></textarea>
-                            </div>
-                            <div class="col-12 col-12-manual">
-                                <button type="submit"
-                                    class="btn btn-primary border location__box__right__form__complete--color"
-                                    id="buttonEnviar">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
+            <h4 class="location_title">Contactenos</h4>
+            <div class="location__box__right__form">
+                <form class="row g-3 location__box__right__form__complete">
+                    <div class="col-12 col-12-manual">
+                        <input type="text" id="inputname" placeholder="Nombre">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <input type="email" id="inputemail" placeholder="E-mail">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <input type="text" id="inputTelefono" placeholder="Telefono">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <input type="text" id="inputMotivoConsulta" placeholder="Motivo de consulta">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <textarea id="inputTextoConsulta" placeholder="Ingrese su consulta"></textarea>
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <button type="submit" class="btn btn-primary border location__box__right__form__complete--color"
+                            id="buttonEnviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
         <footer>
-            <div>
-                <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+            <div class="footer">
+                <div>
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Dirección: Avenida 9 de Julio s/n</p>
+                    <p>Teléfono: 4444-7777</p>
+                    <p>Email: contactenos@monalisa.com.ar</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Nuestras secciones</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="menuv2.html">Cartas</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="beneficios.html">Beneficios</a>
+                    <a href="reservaciones.html">Reservaciones</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Institucional</h3>
+                    <a href="rrhh.html">Recursos humanos</a>
+                    <a href="error.html">Prensa</a>
+                    <a href="franquicia.html">Franquicias</a>
+                </div>
             </div>
-            <div>
-                <h3>Contacto</h3>
-                <p>Dirección: Avenida 9 de Julio s/n</p>
-                <p>Teléfono: 4444-7777</p>
-                <p>Email: contactenos@monalisa.com.ar</p>
+            <div class="footer_mapasitio">
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                        href="mapasitio.html">Mapa del sitio</a></p>
             </div>
-            <div style="display: flex; flex-direction: column;">
-                <h3>Nuestras secciones</h3>
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="menu.html">Cartas</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="error.html">Beneficios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div>
-                <p>Todos los derechos reservados. <br>2021. Creado por Alan Gimenez <br><a class="footer_sitemap" href="mapasitio.html">Mapa del sitio</a></p>
-            </div>
-        </footer>
-    </div>
+        </footer>   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

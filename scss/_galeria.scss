@@ -99,6 +99,11 @@
     transition: 1s all;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.box_toggle{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
 @media only screen and (max-width: 1050px){
     .galeria__recuadro{
         width: 600px;

@@ -5,10 +5,8 @@
 footer{
     background-color: black;
     color: white;
-    height: 18rem;
-    display: flex;
+    height: 20rem;
     align-items: center;
-    justify-content: space-around;
     border-bottom-left-radius: 42px;
     border-bottom-right-radius: 42px;
     a{
@@ -52,6 +50,15 @@ ul{
 }
 .footer_sitemap{
     text-decoration: underline;
+}
+.footer_mapasitio{
+    font-size: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 @media only screen and (max-width: 600px){
     footer{

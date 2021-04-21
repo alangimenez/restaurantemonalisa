@@ -85,12 +85,34 @@
             </nav>
         </header>
         <section>
-            <h1>Sitio en construcción</h1>
-            <img src="imagenes/construccion.png" class="construccion wow animate__animated animate__pulse" data-wow-iteration="500">
-            <h3>¡Ups...llegaste a una pagina de nuestro sitio que aún no hemos inaugurado!<br>Te invitamos a recorrer el resto nuestro de nuestro sitio web, haciendo click 
-                <a href="index.html"><b>aquí</b></a>
-            </h3>
-            <h3>Disculpe las molestias ocasionadas</h3>
+
+            <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
+
+            <h2 class="rrhh_titulo">¿Estas interesado en trabajar con nosotros?<br>
+                ¡Envianos tu CV y te contactaremos!</h2>
+
+            <form class="form_cv">
+                <div class="form-group form-edit">
+                    <div class="col-12 col-12-manual">
+                        <input type="text" id="inputname" placeholder="Nombre y apellido">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <input type="mail" id="inputname" placeholder="E-mail">
+                    </div>
+                    <div class="col-12 col-12-manual">
+                        <textarea id="inputTextoConsulta"
+                            placeholder="Si desea, puede realizar comentarios aquí"></textarea>
+                    </div>
+                    <label for="exampleFormControlFile1">CV a adjuntar</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <div class="col-12 col-12-manual">
+                        <button type="submit" class="btn btn-primary border location__box__right__form__complete--color"
+                            id="buttonEnviar">Enviar</button>
+                    </div>
+
+                </div>
+            </form>
+
         </section>
         <footer>
             <div class="footer">
@@ -125,6 +147,7 @@
                         href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
+    </div>
     <script src="libreria/wow.min.js"></script>
     <script>
         new WOW().init();

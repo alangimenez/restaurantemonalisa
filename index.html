@@ -30,36 +30,47 @@
 
 
         <header>
-            <nav class="home__nav sticky-top">
+            <nav class="home__nav">
 
                 <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                        y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                        un boton que desplega el menu para pantalla pequeña-->
+                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
+                            un boton que desplega el menu para pantalla pequeña-->
 
                 <!--Primer menu-->
 
-                <div id="home__nav__section__one" class="home__nav__section">
-                    <a href="index.html">Inicio</a>
-                </div>
-                <div id="home__nav__section__two" class="home__nav__section">
-                    <a href="nosotros.html">Nosotros</a>
-                </div>
-                <div id="home__nav__section__three" class="home__nav__section">
-                    <a href="menu.html">Cartas</a>
-                </div>
-                <div id="home__nav__section__four">
+                <div class="home__nav__section__four">
                     <img src="imagenes/logoPagina.png" id="logoPagina">
                 </div>
-                <div id="home__nav__section__five" class="home__nav__section">
-                    <a href="galeria.html">Galeria</a>
+                <div class="home_nav_section_otros">
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__one" class="home__nav__section">
+                            <a href="index.html">Inicio</a>
+                        </div>
+                        <div id="home__nav__section__two" class="home__nav__section">
+                            <a href="nosotros.html">Nosotros</a>
+                        </div>
+                        <div id="home__nav__section__three" class="home__nav__section">
+                            <a href="menuv2.html">Cartas</a>
+                        </div>
+                        <div id="home__nav__section__five" class="home__nav__section">
+                            <a href="galeria.html">Galeria</a>
+                        </div>
+                    </div>
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__six" class="home__nav__section">
+                            <a href="beneficios.html">Beneficios</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="reservaciones.html">Reservaciones</a>
+                        </div>
+                        <div id="home__nav__section__seven" class="home__nav__section">
+                            <a href="contacto.html">Contacto</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="error.html">Idioma</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="home__nav__section__six" class="home__nav__section">
-                    <a href="error.html">Beneficios</a>
-                </div>
-                <div id="home__nav__section__seven" class="home__nav__section">
-                    <a href="contacto.html">Contacto</a>
-                </div>
-
                 <!--Segundo menu-->
 
                 <div class="home__nav__section__eight" style="float:right;">
@@ -68,10 +79,12 @@
                     <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
                         <a href="index.html">Inicio</a>
                         <a href="nosotros.html">Nosotros</a>
-                        <a href="menu.html">Cartas</a>
+                        <a href="menuv2.html">Cartas</a>
                         <a href="galeria.html">Galeria</a>
-                        <a href="error.html">Beneficios</a>
+                        <a href="beneficios.html">Beneficios</a>
+                        <a href="reservaciones.html">Reservaciones</a>
                         <a href="contacto.html">Contacto</a>
+                        <a href="error.html">Idioma</a>
                     </div>
                 </div>
 
@@ -81,86 +94,156 @@
             <h1 class="home__title animate__animated animate__zoomIn">Bienvenidos a <br>Restaurante Monalisa</h1>
         </div>
 
+        <div class="home_intro">
+            <h3>Parrafo de introducción</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus magni doloribus minima? Earum hic
+                tempore consequatur? Sunt explicabo atque vel quae! Eaque, in non!</p>
+        </div>
 
-        <!--Nuestros beneficios-->
-        <!--Los beneficios son responsive a cada tamaño de pantalla (a medida que disminuye el tamaño
-                de pantalla, se van colocando uno debajo del otro). Ver bien el tema del fondo, no se ve
-                muy bien la letra, y ver tamaño de la letra-->
-
-        <section class="beneficio" id="beneficio">
-            <h2 class="beneficio__title wow animate__animated wow animate__zoomIn" >Nuestros beneficios para clientes</h2>
-            <div class="beneficio__intern">
-                <div class="beneficio__intern__item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-                    <div id="beneficio9" class="beneficio__intern__img"><img src="imagenes/iconoTarj.png"
-                            alt="Imagen visa" class="beneficio__intern__img--format">
-                    </div>
-                    <div id="beneficio1" class="beneficio__intern__title">Descuentos con Débito</div>
-                    <div id="beneficio4" class="beneficio__intern__text">Cada uno de nuestros empleados y chefs está
-                        siempre
-                        predispuesto a dar lo mejor de sí mismo, buscando que nuestros
-                        clientes disfruten de una gran experiencia.</div>
-                </div>
-                <div class="beneficio__intern__item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-                    <div id="beneficio10" class="beneficio__intern__img"><img src="imagenes/iconoEst.png"
-                            alt="Imagen visa" class="beneficio__intern__img--format">
-                    </div>
-                    <div id="beneficio2" class="beneficio__intern__title">Playa de estacionamiento</div>
-                    <div id="beneficio5" class="beneficio__intern__text">Todo nuestro staff, desde el jefe de cocina
-                        hasta
-                        cada uno de
-                        los camarareros, están capacitados y preparados para
-                        brindar un servicio de excelencia a cada uno de nuestros comensales.</div>
-                </div>
-                <div class="beneficio__intern__item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-                    <div id="beneficio11" class="beneficio__intern__img"><img src="imagenes/iconoVino.png"
-                            alt="Imagen visa" class="beneficio__intern__img--format">
-                    </div>
-                    <div id="beneficio3" class="beneficio__intern__title">Carta de vinos</div>
-                    <div id="beneficio6" class="beneficio__intern__text">Entre todos los que hacemos posible este
-                        proyecto,
-                        les
-                        agradecemos a todos nuestros clientes que nos eligen día tras día,
-                        dado que sin ustedes, nada de esto sería posible.</div>
-                </div>
-                <div class="beneficio__intern__item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-                    <div id="beneficio12" class="beneficio__intern__img"><img src="imagenes/iconoVip.png"
-                            alt="Imagen visa" class="beneficio__intern__img--format">
-                    </div>
-                    <div id="beneficio7" class="beneficio__intern__title">Tarjeta VIP</div>
-                    <div id="beneficio8" class="beneficio__intern__text">Entre todos los que hacemos posible este
-                        proyecto,
-                        les
-                        agradecemos a todos nuestros clientes que nos eligen día tras día,
-                        dado que sin ustedes, nada de esto sería posible.</div>
-                </div>
+        <div class="home_seccion">
+            <div class="home_seccion_img">
+                <a href="nosotros.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
             </div>
-        </section>
+            <div class="home_seccion_texto">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+        </div>
+
+        <div class="home_seccion">
+            <div class="home_seccion_texto">
+                <h3>Cartas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+            <div class="home_seccion_img">
+                <a href="menu v2.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="home_seccion">
+            <div class="home_seccion_img">
+                <a href="galeria.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
+            </div>
+            <div class="home_seccion_texto">
+                <h3>Galeria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+        </div>
+
+        <div class="home_seccion">
+            <div class="home_seccion_texto">
+                <h3>Beneficios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+            <div class="home_seccion_img">
+                <a href="beneficios.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="home_seccion">
+            <div class="home_seccion_img">
+                <a href="reservaciones.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
+            </div>
+            <div class="home_seccion_texto">
+                <h3>Reservaciones</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+        </div>
+
+        <div class="home_seccion">
+            <div class="home_seccion_texto">
+                <h3>Contacto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et fuga quasi architecto
+                    molestias, officiis voluptatem animi eaque dignissimos, exercitationem eligendi provident illum
+                    laudantium deleniti.</p>
+            </div>
+            <div class="home_seccion_img">
+                <a href="contacto.html">
+                    <img src="imagenes/comida1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <h3 class="home_institucional_title">¿Queres conocer mas sobre nosotros?</h3>
+        <div class="home_institucional">
+            <div>
+                <h4>Recursos humanos</h4>
+                <a href="rrhh.html">
+                    <p class="home_institucional_texto"></p>
+                </a>
+                <img src="imagenes/comida2.jpg" alt="" class="home_institucional_img">
+            </div>
+            <div>
+                <h4>Prensa</h4>
+                <a href="error.html">
+                    <p class="home_institucional_texto"></p>
+                </a>
+                <img src="imagenes/comida4.jpg" alt="" class="home_institucional_img">
+            </div>
+            <div>
+                <h4>Franquicias</h4>
+                <a href="franquicia.html">
+                    <p class="home_institucional_texto"></p>
+                </a>
+                <img src="imagenes/comida6.jpg" alt="" class="home_institucional_img">
+            </div>
+        </div>
 
 
         <!--Footer-->
         <!--En el footer, solo debe ir logo del restaurante con el nombre, y derechos reservados-->
 
         <footer>
-            <div>
-                <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+            <div class="footer">
+                <div>
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Dirección: Avenida 9 de Julio s/n</p>
+                    <p>Teléfono: 4444-7777</p>
+                    <p>Email: contactenos@monalisa.com.ar</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Nuestras secciones</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="menuv2.html">Cartas</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="beneficios.html">Beneficios</a>
+                    <a href="reservaciones.html">Reservaciones</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Institucional</h3>
+                    <a href="rrhh.html">Recursos humanos</a>
+                    <a href="error.html">Prensa</a>
+                    <a href="franquicia.html">Franquicias</a>
+                </div>
             </div>
-            <div>
-                <h3>Contacto</h3>
-                <p>Dirección: Avenida 9 de Julio s/n</p>
-                <p>Teléfono: 4444-7777</p>
-                <p>Email: contactenos@monalisa.com.ar</p>
-            </div>
-            <div style="display: flex; flex-direction: column;">
-                <h3>Nuestras secciones</h3>
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="menu.html">Cartas</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="error.html">Beneficios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div>
-                <p>Todos los derechos reservados. <br>2021. Creado por Alan Gimenez <br><a class="footer_sitemap" href="mapasitio.html">Mapa del sitio</a></p>
+            <div class="footer_mapasitio">
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                        href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
     </div>
@@ -176,7 +259,7 @@
     <script src="libreria/wow.min.js"></script>
     <script>
         new WOW().init();
-        </script>
+    </script>
 </body>
 
 </html>

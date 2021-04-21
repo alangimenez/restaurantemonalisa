@@ -1,38 +1,120 @@
 /*----------------------------------------------------------------*/
 /*------------------------menu------------------------------------*/
 /*----------------------------------------------------------------*/
-
-#carousel{
-    background-color: black;
-    color: white;
+.menu{
+    justify-content: center;
 }
-.carousel__table{
-    margin-left: auto;
-    margin-right: auto;
+.menu_box{
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: absolute; 
+    background-color: rgb(230, 230, 230);
+    border-radius: 50px;
+    transition: 1s;
+    height: 215px;
+    width: 290px;
+    h3{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    h4{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
-td{
-    height: 2rem;
+.menu_box:hover{
+    transform: scale(1.10,1.10);
+    transition: 1s;
 }
-table, td, tr{
-    border: hidden;
+.menu_box_contenedor{
+    margin: 0 auto;
+    width: 912px;
+    height: 1525px;
 }
-table{
-    margin-bottom: 4rem;
-    margin-left: auto;
-    margin-right: auto;
+#box1{
+    margin-left: 35px;
 }
-.carousel__table__column1{
-    width: 20rem;
-    text-align: left;
-    text-overflow: clip;
+#box2{
+    margin-left: 290px+332px-35px;
 }
-.carousel__table__column2{
-    width: 5rem;
+#box3{
+    margin-top: 300px+48px;
+    margin-left: 35px;
 }
-.carousel__table__column3{
-    width: 5rem;
+#box4{
+    margin-top: 300px+48px;
+    margin-left: 290px+332px-35px;
 }
-.carousel__title{
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+#box5{
+    margin-top: 300px*2+48px;
+    margin-left: 35px;
+}
+#box6{
+    margin-top: 300px*2+48px;
+    margin-left: 290px+332px-35px;
+}
+#box7{
+    margin-top: 300px*3+48px;
+    margin-left: 35px;
+}
+#box8{
+    margin-top: 300px*3+48px;
+    margin-left: 290px+332px-35px;
+}
+#box9{
+    margin-top: 300px*4+48px;
+    margin-left: 35px;
+}
+#box10{
+    margin-top: 300px*4+48px;
+    margin-left: 290px+332px-35px;
+}
+@media only screen and (max-width: 1024px){
+    .menu_box_contenedor{
+        margin: 0 auto;
+        width: 912px-150px;
+        height: 1525px;
+    }
+    #box1{
+        margin-left: 5vw;
+    }
+    #box2{
+        margin-left: 400px;
+    }
+    #box3{
+        margin-top: 300px+48px;
+        margin-left: 35px;
+    }
+    #box4{
+        margin-top: 300px+48px;
+        margin-left: 290px+332px-35px;
+    }
+    #box5{
+        margin-top: 300px*2+48px;
+        margin-left: 35px;
+    }
+    #box6{
+        margin-top: 300px*2+48px;
+        margin-left: 290px+332px-35px;
+    }
+    #box7{
+        margin-top: 300px*3+48px;
+        margin-left: 35px;
+    }
+    #box8{
+        margin-top: 300px*3+48px;
+        margin-left: 290px+332px-35px;
+    }
+    #box9{
+        margin-top: 300px*4+48px;
+        margin-left: 35px;
+    }
+    #box10{
+        margin-top: 300px*4+48px;
+        margin-left: 290px+332px-35px;
+    }
 }

@@ -1,0 +1,45 @@
+.reservacion_titulo{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.reservas_form{
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: black;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.reservas_form_items{
+    border-bottom: grey 1px solid  !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    font-size: 1.20rem;
+    padding-left: 0.50rem;
+    border-radius: 0.70rem;
+    width: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-family: 'Zilla Slab', serif !important;
+    background-color: black;
+    color: white;
+    margin-left: 0px;
+}
+.reservas_form_items_ambiente{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.reservas_form_items_ambiente_box{
+    width: 50%;
+}
+.reservas_form_submit{
+    background-color: white;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reservas_form_submit:hover{
+    background-color: green;
+}

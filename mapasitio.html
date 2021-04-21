@@ -27,33 +27,44 @@
             <nav class="home__nav">
 
                 <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                        y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                        un boton que desplega el menu para pantalla pequeña-->
+                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
+                            un boton que desplega el menu para pantalla pequeña-->
 
                 <!--Primer menu-->
 
-                <div id="home__nav__section__one" class="home__nav__section">
-                    <a href="index.html">Inicio</a>
-                </div>
-                <div id="home__nav__section__two" class="home__nav__section">
-                    <a href="nosotros.html">Nosotros</a>
-                </div>
-                <div id="home__nav__section__three" class="home__nav__section">
-                    <a href="menu.html">Cartas</a>
-                </div>
-                <div id="home__nav__section__four">
+                <div class="home__nav__section__four">
                     <img src="imagenes/logoPagina.png" id="logoPagina">
                 </div>
-                <div id="home__nav__section__five" class="home__nav__section">
-                    <a href="galeria.html">Galeria</a>
+                <div class="home_nav_section_otros">
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__one" class="home__nav__section">
+                            <a href="index.html">Inicio</a>
+                        </div>
+                        <div id="home__nav__section__two" class="home__nav__section">
+                            <a href="nosotros.html">Nosotros</a>
+                        </div>
+                        <div id="home__nav__section__three" class="home__nav__section">
+                            <a href="menuv2.html">Cartas</a>
+                        </div>
+                        <div id="home__nav__section__five" class="home__nav__section">
+                            <a href="galeria.html">Galeria</a>
+                        </div>
+                    </div>
+                    <div class="home_nav_section_otros_interno">
+                        <div id="home__nav__section__six" class="home__nav__section">
+                            <a href="beneficios.html">Beneficios</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="reservaciones.html">Reservaciones</a>
+                        </div>
+                        <div id="home__nav__section__seven" class="home__nav__section">
+                            <a href="contacto.html">Contacto</a>
+                        </div>
+                        <div id="home__nav__section__eight" class="home__nav__section">
+                            <a href="error.html">Idioma</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="home__nav__section__six" class="home__nav__section">
-                    <a href="error.html">Beneficios</a>
-                </div>
-                <div id="home__nav__section__seven" class="home__nav__section">
-                    <a href="contacto.html">Contacto</a>
-                </div>
-
                 <!--Segundo menu-->
 
                 <div class="home__nav__section__eight" style="float:right;">
@@ -62,10 +73,12 @@
                     <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
                         <a href="index.html">Inicio</a>
                         <a href="nosotros.html">Nosotros</a>
-                        <a href="menu.html">Cartas</a>
+                        <a href="menuv2.html">Cartas</a>
                         <a href="galeria.html">Galeria</a>
-                        <a href="error.html">Beneficios</a>
+                        <a href="beneficios.html">Beneficios</a>
+                        <a href="reservaciones.html">Reservaciones</a>
                         <a href="contacto.html">Contacto</a>
+                        <a href="error.html">Idioma</a>
                     </div>
                 </div>
 
@@ -87,29 +100,38 @@
             </ol>
         </section>
         <footer>
-            <div>
-                <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+            <div class="footer">
+                <div>
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Dirección: Avenida 9 de Julio s/n</p>
+                    <p>Teléfono: 4444-7777</p>
+                    <p>Email: contactenos@monalisa.com.ar</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Nuestras secciones</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="menuv2.html">Cartas</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="beneficios.html">Beneficios</a>
+                    <a href="reservaciones.html">Reservaciones</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Institucional</h3>
+                    <a href="rrhh.html">Recursos humanos</a>
+                    <a href="error.html">Prensa</a>
+                    <a href="franquicia.html">Franquicias</a>
+                </div>
             </div>
-            <div>
-                <h3>Contacto</h3>
-                <p>Dirección: Avenida 9 de Julio s/n</p>
-                <p>Teléfono: 4444-7777</p>
-                <p>Email: contactenos@monalisa.com.ar</p>
-            </div>
-            <div style="display: flex; flex-direction: column;">
-                <h3>Nuestras secciones</h3>
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="menu.html">Cartas</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="error.html">Beneficios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div>
-                <p>Todos los derechos reservados. <br>2021. Creado por Alan Gimenez <br><a class="footer_sitemap" href="mapasitio.html">Mapa del sitio</a></p>
+            <div class="footer_mapasitio">
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                        href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
-    </div>
     <script src="libreria/wow.min.js"></script>
     <script>
         new WOW().init();
