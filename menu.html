@@ -25,62 +25,56 @@
 
 <body>
     <div class="margin">
-        <!--Menu-->
-        <!--El menu es un carrousel de 5 tablas que muestran las diferentes partes de una carta.
-            No tiene adaptaciones por tamaño de pantalla por el momento (probar mirarlo desde un celular
-            y ver como se ve)-->
 
         <!--Header-->
 
-
         <header>
-            <nav class="home__nav">
+            <nav>
 
-                <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                            un boton que desplega el menu para pantalla pequeña-->
+                <!--Menu general-->
 
-                <!--Primer menu-->
-
-                <div class="home__nav__section__four">
-                    <img src="imagenes/logoPagina.png" id="logoPagina">
+                <div class="header_logo">
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                    <h3>Restaurante Monalisa</h3>
                 </div>
-                <div class="home_nav_section_otros">
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__one" class="home__nav__section">
+                <div class="header_seccion">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="index.html">Inicio</a>
                         </div>
-                        <div id="home__nav__section__two" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="nosotros.html">Nosotros</a>
                         </div>
-                        <div id="home__nav__section__three" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="menu.html">Cartas</a>
                         </div>
-                        <div id="home__nav__section__five" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="galeria.html">Galeria</a>
                         </div>
                     </div>
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__six" class="home__nav__section">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="beneficios.html">Beneficios</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="reservaciones.html">Reservaciones</a>
                         </div>
-                        <div id="home__nav__section__seven" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="contacto.html">Contacto</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="error.html">Idioma</a>
                         </div>
                     </div>
                 </div>
-                <!--Segundo menu-->
 
-                <div class="home__nav__section__eight" style="float:right;">
-                    <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
-                            id="menu__img"></button>
-                    <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                <!--Menu responsive-->
+
+                <div class="header_mobile" style="float:right;">
+                    <button class="header_mobile_boton">
+                        <img src="imagenes/iconoMenu.png" id="menu__img" alt="Menu">
+                    </button>
+                    <div class="header_mobile_links header_mobile_links-desplegable">
                         <a href="index.html">Inicio</a>
                         <a href="nosotros.html">Nosotros</a>
                         <a href="menu.html">Cartas</a>
@@ -95,15 +89,17 @@
             </nav>
         </header>
 
-        <div class="menu_img_box">
-            <img src="imagenes/menu_img.jpg" alt="imagenFondo" class="beneficio_img">
-            <h1 class="menu_titulo">Menu de platos</h1>
-        </div>
+        <!--Contenido-->
 
         <section class="menu">
-            <div class="contacto_img_box">
-                <img src="imagenes/titulo2.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Entradas</h2>
+            <div class="titulo_caja">
+                <div>Imagen de fondo de seccion</div>
+                <img src="imagenes/menu_img.jpg" alt="Fondo de la sección" class="titulo_img">
+                <h1 class="titulo_principal">Menu de platos</h1>
+            </div>
+            <div class="menu_inicial_subtitulo">
+                <img src="imagenes/titulo2.png" alt="Fondo del subtitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Entradas</h2>
             </div>
             <div class="menu_box_contenedor">
                 <div class="menu_box">
@@ -143,9 +139,9 @@
                     <h4>$xxx</h4>
                 </div>
             </div>
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Plato principal</h2>
+            <div class="menu_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Plato principal</h2>
             </div>
             <div class="menu_box_contenedor">
                 <div class="menu_box">
@@ -185,9 +181,9 @@
                     <h4>$xxx</h4>
                 </div>
             </div>
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Postres</h2>
+            <div class="menu_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Postres</h2>
             </div>
             <div class="menu_box_contenedor">
                 <div class="menu_box">
@@ -227,9 +223,9 @@
                     <h4>$xxx</h4>
                 </div>
             </div>
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Vinos</h2>
+            <div class="menu_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Vinos</h2>
             </div>
             <div class="menu_box_contenedor">
                 <div class="menu_box">
@@ -269,9 +265,9 @@
                     <h4>$xxx</h4>
                 </div>
             </div>
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Bebidas</h2>
+            <div class="menu_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Bebidas</h2>
             </div>
             <div class="menu_box_contenedor">
                 <div class="menu_box">
@@ -312,6 +308,9 @@
                 </div>
             </div>
         </section>
+
+        <!--Footer-->
+
         <footer>
             <div class="footer">
                 <div>
@@ -327,7 +326,7 @@
                     <h3>Nuestras secciones</h3>
                     <a href="index.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="menuv2.html">Cartas</a>
+                    <a href="menu.html">Cartas</a>
                     <a href="galeria.html">Galeria</a>
                     <a href="beneficios.html">Beneficios</a>
                     <a href="reservaciones.html">Reservaciones</a>
@@ -336,16 +335,22 @@
                 <div style="display: flex; flex-direction: column;">
                     <h3>Institucional</h3>
                     <a href="rrhh.html">Recursos humanos</a>
-                    <a href="error.html">Prensa</a>
+                    <a href="prensa.html">Prensa</a>
                     <a href="franquicia.html">Franquicias</a>
+                    <input type="email" id="emailnews" placeholder="Ingrese aquí su e-mail" class="footer_newsletter">
+                    <button type="submit" id="suscribirse" class="btn btn-primary border footer_boton">Suscribirse a
+                        newsletter</button>
                 </div>
             </div>
             <div class="footer_mapasitio">
-                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_mapasitio_texto"
                         href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
     </div>
+
+    <!--Enlaces Bootstrap-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

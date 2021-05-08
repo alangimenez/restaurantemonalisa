@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Meta tags requeridos -->
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
-    <meta name="description" content="Somos un restaurante creado hace apenas 2 años, que aspira a brindar una 
+    <meta name="description" content="Somos un restaurante creado hace apenas 4 años, que aspira a brindar una 
     atención de calidad, una comida de excelencia, y una experiencia que los invite a volver por mas. Si queres
     conocernos de primera mano, te invitamos a venir a disfrutar de un buen rato juntos. ">
     <meta name="keyword" content="atencion al cliente, calidad, excelencia, disfrutar, experiencias">
@@ -25,60 +25,59 @@
 
 <body>
     <div class="margin">
+
         <!--Header-->
 
-
         <header>
-            <nav class="home__nav">
+            <nav>
 
-                <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                            un boton que desplega el menu para pantalla pequeña-->
+                <!--Menu general-->
 
-                <!--Primer menu-->
-
-                <div class="home__nav__section__four">
-                    <img src="imagenes/logoPagina.png" id="logoPagina">
+                <div class="header_logo">
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                    <h3>Restaurante Monalisa</h3>
                 </div>
-                <div class="home_nav_section_otros">
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__one" class="home__nav__section">
+                <div class="header_seccion">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="index.html">Inicio</a>
                         </div>
-                        <div id="home__nav__section__two" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="nosotros.html">Nosotros</a>
                         </div>
-                        <div id="home__nav__section__three" class="home__nav__section">
-                            <a href="menuv2.html">Cartas</a>
+                        <div class="header_seccion_interno_item">
+                            <a href="menu.html">Cartas</a>
                         </div>
-                        <div id="home__nav__section__five" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="galeria.html">Galeria</a>
                         </div>
                     </div>
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__six" class="home__nav__section">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="beneficios.html">Beneficios</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="reservaciones.html">Reservaciones</a>
                         </div>
-                        <div id="home__nav__section__seven" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="contacto.html">Contacto</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="error.html">Idioma</a>
                         </div>
                     </div>
                 </div>
-                <!--Segundo menu-->
 
-                <div class="home__nav__section__eight" style="float:right;">
-                    <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
-                            id="menu__img"></button>
-                    <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                <!--Menu responsive-->
+
+                <div class="header_mobile" style="float:right;">
+                    <button class="header_mobile_boton">
+                        <img src="imagenes/iconoMenu.png" id="menu__img" alt="Menu">
+                    </button>
+                    <div class="header_mobile_links header_mobile_links-desplegable">
                         <a href="index.html">Inicio</a>
                         <a href="nosotros.html">Nosotros</a>
-                        <a href="menuv2.html">Cartas</a>
+                        <a href="menu.html">Cartas</a>
                         <a href="galeria.html">Galeria</a>
                         <a href="beneficios.html">Beneficios</a>
                         <a href="reservaciones.html">Reservaciones</a>
@@ -89,26 +88,23 @@
 
             </nav>
         </header>
-        <div class="nosotros_img_box">
-            <img src="imagenes/nosotros_img.jpg" alt="imagenFondo" class="beneficio_img">
-            <h1 class="nosotros_titulo">Sobre nosotros</h1>
-        </div>
 
+        <!--Contenido-->
 
-        <!--Nuestra historia-->
-        <!--Posee 2 grids, uno adentro del otro. En pantalla grande y mediana, se debe ver un grid
-            de 2 columnas,y en la columna izquierda debe haber un grid de 2 filas. En pantalla chica, 
-            debe verse todo en filas, para verse uno abajo del otro-->
+        <section class="nosotros">
+            <div class="titulo_caja">
+                <img src="imagenes/nosotros_img.jpg" alt="imagenFondo" class="titulo_img">
+                <h1 class="titulo_principal">Sobre nosotros</h1>
+            </div>
 
-        <section class="history" id="history">
-            <div class="nosotros_img_box">
-                <img src="imagenes/titulo2.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">Acerca de nuestros chefs fundadores</h2>
+            <div class="nosotros_inicial_subtitulo">
+                <img src="imagenes/titulo2.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Acerca de nuestros chefs fundadores</h2>
             </div>
             <div class="uno"></div>
-            <div class="history_fotos">
-                <div class="history_fotos_img">
-                    <div class="history_fotos_img_hover">
+            <div class="nosotros_fotos">
+                <div class="nosotros_fotos_img">
+                    <div class="nosotros_fotos_img_hover">
                         <h3>Historia del chef 1</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus incidunt ut in
                             eos sapiente, ex, provident error minima suscipit non nulla aspernatur natus, itaque
@@ -119,8 +115,8 @@
                     </div>
                     <img src="imagenes/chef1.png">
                 </div>
-                <div class="history_fotos_img">
-                    <div class="history_fotos_img_hover">
+                <div class="nosotros_fotos_img">
+                    <div class="nosotros_fotos_img_hover">
                         <h3>Historia del chef 2</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus incidunt ut in
                             eos sapiente, ex, provident error minima suscipit non nulla aspernatur natus, itaque
@@ -132,12 +128,9 @@
                     <img src="imagenes/chef2.jpg">
                 </div>
             </div>
-
-            <!--Este es el grid general-->
-
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">La historia de nuestro hogar</h2>
+            <div class="nosotros_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">La historia de nuestro hogar</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, enim, asperiores reiciendis repellat odit
                 ipsam adipisci neque architecto sequi magni odio ab magnam, corporis dolore laborum ut doloribus libero
@@ -148,37 +141,37 @@
                 explicabo! Est possimus quas quasi architecto repellendus id quis doloremque in inventore consequatur
                 aliquam blanditiis nihil, vel ut culpa odio.</p>
 
-                <div class="contacto_img_box2">
-                    <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                    <h2 class="location__title">Los valores que nos guian</h2>
-                </div>
+            <div class="nosotros_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Los valores que nos guian</h2>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquam.</p>
-            <div class="history_principios">
-                <div class="history_principios_item">
+            <div class="nosotros_principios">
+                <div class="nosotros_principios_item">
                     <h4>Pasión</h4>
                     <p>Cada uno de nuestros empleados y chefs está siempre
                         predispuesto a dar lo mejor de sí mismo, buscando que nuestros
                         clientes disfruten de una gran experiencia.</p>
                 </div>
-                <div class="history_principios_item">
+                <div class="nosotros_principios_item">
                     <h4>Profesionalismo</h4>
                     <p>Todo nuestro staff, desde el jefe de cocina hasta cada uno de
                         los camarareros, están capacitados y preparados para
                         brindar un servicio de excelencia a cada uno de nuestros comensales.</p>
                 </div>
-                <div class="history_principios_item">
+                <div class="nosotros_principios_item">
                     <h4>Agradecimiento</h4>
                     <p>Entre todos los que hacemos posible este proyecto, les
                         agradecemos a todos nuestros clientes que nos eligen día tras día,
                         dado que sin ustedes, nada de esto sería posible.</p>
                 </div>
             </div>
-            <div class="contacto_img_box2">
-                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="contacto_subtitulo">
-                <h2 class="location__title">¿Qué dicen nuestros clientes sobre nosotros?</h2>
+            <div class="nosotros_intermedio_subtitulo">
+                <img src="imagenes/titulo3al75.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">¿Qué dicen nuestros clientes sobre nosotros?</h2>
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
-                <div class="carousel-inner history_carousel">
+                <div class="carousel-inner nosotros_carousel">
                     <div class="carousel-item active">
                         <p>"Es un lugar para disfrutar con toda la familia"</p>
                     </div>
@@ -197,6 +190,9 @@
                 </div>
             </div>
         </section>
+
+        <!--Footer-->
+
         <footer>
             <div class="footer">
                 <div>
@@ -212,7 +208,7 @@
                     <h3>Nuestras secciones</h3>
                     <a href="index.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="menuv2.html">Cartas</a>
+                    <a href="menu.html">Cartas</a>
                     <a href="galeria.html">Galeria</a>
                     <a href="beneficios.html">Beneficios</a>
                     <a href="reservaciones.html">Reservaciones</a>
@@ -221,17 +217,22 @@
                 <div style="display: flex; flex-direction: column;">
                     <h3>Institucional</h3>
                     <a href="rrhh.html">Recursos humanos</a>
-                    <a href="error.html">Prensa</a>
+                    <a href="prensa.html">Prensa</a>
                     <a href="franquicia.html">Franquicias</a>
+                    <input type="email" id="emailnews" placeholder="Ingrese aquí su e-mail" class="footer_newsletter">
+                    <button type="submit" id="suscribirse" class="btn btn-primary border footer_boton">Suscribirse a
+                        newsletter</button>
                 </div>
             </div>
             <div class="footer_mapasitio">
-                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_mapasitio_texto"
                         href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
     </div>
-    </div>
+
+    <!--Enlaces Bootstrap-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

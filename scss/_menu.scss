@@ -1,38 +1,16 @@
-/*----------------------------------------------------------------*/
-/*------------------------menu------------------------------------*/
-/*----------------------------------------------------------------*/
-.menu{
+.menu {
     justify-content: center;
     display: inline-block;
 }
-.menu_box{
-    margin: 0 auto;
-    margin-top: 3rem;
-    border-radius: 50px;
-    width: 350px;
-    transition: 1s;
-    h3{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        padding: 0;
-        display: inline;
-        text-decoration: underline;
-    }
-    p{
-        margin-bottom: 0;
-    }
-    h4{
-        margin-top: 0;
-        margin-bottom: 0;
-        display: inline;
+.menu_inicial_subtitulo {
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2 {
+        top: 35%;
     }
 }
-.menu_box:hover{
-    transform: scale(1.10,1.10);
-    transition: 1s;
-    background-color: rgba(196, 196, 196, 0.527);
-}
-.menu_box_contenedor{
+.menu_box_contenedor {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -41,33 +19,49 @@
     overflow: hidden;
     padding-bottom: 2rem;
 }
-.menu_img_box{
-    @extend .img_caja;
-    h2{
-        top: 35%;
+.menu_box {
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 50px;
+    width: 350px;
+    transition: 1s;
+    h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
+        display: inline;
+        text-decoration: underline;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline;
     }
 }
-.menu_titulo{
-    white-space: nowrap;
+.menu_box:hover {
+    transition: 1s;
+    box-shadow: 0 0 1rem 0.15rem   black;
 }
-@media only screen and (min-width: 1560px){
-    .menu_box_contenedor{
+.menu_intermedio_subtitulo {
+    width: 90vw;
+    height: 20vw;
+    margin-bottom: 3rem;
+    @extend .titulo_caja;
+    h2 {
+        top: 45%;
+    }
+}
+
+@media only screen and (min-width: 1560px) {
+    .menu_box_contenedor {
         width: 1392px;
     }
 }
-@media only screen and (max-width: 800px){
-    .menu_titulo{
-        font-size: calc(1.2em + 1.2vw);
-        transition: 1s;
-    }
-}
-@media only screen and (max-width: 600px){
-    .menu_titulo{ 
-        padding: 0.5rem !important;
-    }
-}
-@media only screen and (max-width: 450px){
-    .menu_box{
+@media only screen and (max-width: 450px) {
+    .menu_box {
         width: unset;
         padding-left: 5%;
         padding-right: 5%;
