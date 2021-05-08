@@ -1,16 +1,19 @@
-.franquicia_titulo{
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+.franquicia_subtitulo {
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2 {
+        top: 35%;
+    }
 }
-.franquicia_contenido{
+.franquicia_contenido {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-}
-.franquicia_contenido_item{
-    width: 50%;
-}
-.franquicia_contenido_item_der{
-    padding-left: 5%;
-    padding-right: 5%;
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }

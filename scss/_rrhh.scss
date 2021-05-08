@@ -1,11 +1,88 @@
-.rrhh_titulo{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.rrhh_subtitulo{
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2{
+        top: 35%;
+    }
 }
-.form-edit{
-    width: 50%;
+.rrhh_texto{
+    margin-left: 5%;
+    margin-right: 5%;
+    h4{
+        text-decoration: none;
+    }
 }
-.form_cv{
+.rrhh_cv {
     display: flex;
     justify-content: center;
+}
+.rrhh_edit {
+    width: 50%;
+}
+.rrhh_box {
+    margin-top: 1rem;
+}
+.rrhh_campo{
+    border-bottom: grey 1px solid  !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    font-size: 1.20rem;
+    padding-left: 0.50rem;
+    border-radius: 0.70rem;
+    width: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-family: 'Zilla Slab', serif !important;
+    background-color: black;
+    color: white;
+    margin-left: 0px;
+}
+.rrhh_campo::placeholder {
+    color: white;
+}
+.rrhh_campo:focus{
+    box-shadow: 0 0 1rem 0.25rem   black;
+    outline: none;
+    font-family: 'Zilla Slab', serif !important;
+}
+.rrhh_box_cv {
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 0.7rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    input {
+        width: 100%;
+    }
+}
+.rrhh_boton {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.rrhh_boton-color{
+    background-color: white !important;
+}
+.rrhh_boton-color:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .rrhh_edit {
+        width: 75%;
+        transition: 1s;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rrhh_edit {
+        width: 90%;
+        transition: 1s;
+    }
 }

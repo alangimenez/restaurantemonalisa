@@ -1,16 +1,16 @@
-/*----------------------------------------------------------------*/
-/*------------------------galeria de imagenes---------------------*/
-/*----------------------------------------------------------------*/
-
-#galeria{
+.galeria {
     background-color: white;
     justify-content: center;
 }
-.galeria__titulo{
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+.galeria_subtitulo {
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2 {
+        top: 35%;
+    }
 }
-.galeria__recuadro{
+.galeria_recuadro {
     margin: 0 auto;
     background-color: white;
     padding-bottom: 4rem;
@@ -19,14 +19,7 @@
     transition-duration: 1s;
     transition-property: all;
 }
-.galeria__recuadro__img{
-    width: 18rem;
-    height: 14rem;
-    margin: 0.2vh 0.2vw 0.2vh 0.2vw;
-    border-radius: 2.5%;
-    transition: 0.2s linear;
-}
-.img{
+.galeria_recuadro_item {
     position: absolute;
     width: 290px;
     height: 225px;
@@ -34,63 +27,64 @@
     transition-duration: 1s;
     transition-property: all;
 }
-.img1{
+.galeria_recuadro_uno {
     margin-left: 10px;
 }
-
-.img2{
+.galeria_recuadro_dos {
     margin-left: 310px;
 }
-.img3{
+.galeria_recuadro_tres {
     margin-left: 610px;
 }
-.img4{
+.galeria_recuadro_cuatro {
     margin-top: 244px;
     margin-left: 10px;
 }
-.img5{
+.galeria_recuadro_cinco {
     margin-top: 244px;
     margin-left: 310px;
 }
-.img6{
+.galeria_recuadro_seis {
     margin-top: 244px;
     margin-left: 610px;
 }
-.img7{
+.galeria_recuadro_siete {
     margin-top: 478px;
     margin-left: 10px;
 }
-.img8{
+.galeria_recuadro_ocho {
     margin-top: 478px;
     margin-left: 310px;
 }
-.img9{
+.galeria_recuadro_nueve {
     margin-top: 478px;
     margin-left: 610px;
 }
-.img10{
+.galeria_recuadro_diez {
     margin-top: 712px;
     margin-left: 10px;
 }
-.img11{
-    margin-top: 712px; 
+.galeria_recuadro_once {
+    margin-top: 712px;
     margin-left: 310px;
 }
-.img12{
+.galeria_recuadro_doce {
     margin-top: 712px;
     margin-left: 610px;
 }
-.comida{
+.galeria_recuadro_comida {
     position: absolute;
+    left: 2px;
     margin-top: 0px;
     margin-left: 0px;
-    width: 290px;
-    height: 225px;
+    width: 288px;
+    height: 224px;
     line-height: 225px;
     opacity: 0%;
     transition: 1s all;
+    border-radius: 2.5%;
 }
-.comida:hover{
+.galeria_recuadro_comida:hover {
     opacity: 100%;
     z-index: 1;
     color: white;
@@ -99,117 +93,235 @@
     transition: 1s all;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.box_toggle{
-    background-color: green;
+.box_toggle {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    img {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 576px;
+        height: 448px;
+    }
+    div {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        h3 {
+            width: 15rem;
+        }
+    }
 }
-@media only screen and (max-width: 1050px){
-    .galeria__recuadro{
+.galeria__recuadro__img {
+    width: 18rem;
+    height: 14rem;
+    margin: 0.2vh 0.2vw 0.2vh 0.2vw;
+    border-radius: 2.5%;
+    transition: 0.2s linear;
+}
+
+@media only screen and (max-width: 1050px) {
+    .galeria_recuadro {
         width: 600px;
         height: 1500px;
         transition-duration: 1s;
         transition-property: all;
     }
-    .img{
+    .galeria_recuadro_item {
         transition-duration: 1s;
         transition-property: all;
     }
-    .img1{
+    .galeria_recuadro_uno {
         margin-left: 10px;
     }
 
-    .img2{
+    .galeria_recuadro_dos {
         margin-left: 310px;
     }
-    .img3{
+    .galeria_recuadro_tres {
         margin-left: 10px;
         margin-top: 244px;
     }
-    .img4{
+    .galeria_recuadro_cuatro {
         margin-top: 244px;
         margin-left: 310px;
     }
-    .img5{
+    .galeria_recuadro_cinco {
         margin-top: 478px;
         margin-left: 10px;
     }
-    .img6{
+    .galeria_recuadro_seis {
         margin-top: 478px;
         margin-left: 310px;
     }
-    .img7{
+    .galeria_recuadro_siete {
         margin-top: 712px;
         margin-left: 10px;
     }
-    .img8{
+    .galeria_recuadro_ocho {
         margin-top: 712px;
         margin-left: 310px;
     }
-    .img9{
+    .galeria_recuadro_nueve {
         margin-top: 946px;
         margin-left: 10px;
     }
-    .img10{
+    .galeria_recuadro_diez {
         margin-top: 946px;
         margin-left: 310px;
     }
-    .img11{
-        margin-top: 1180px; 
+    .galeria_recuadro_once {
+        margin-top: 1180px;
         margin-left: 10px;
     }
-    .img12{
+    .galeria_recuadro_doce {
         margin-top: 1180px;
         margin-left: 310px;
     }
 }
-@media only screen and (max-width: 768px){
-    .galeria__recuadro{
+@media only screen and (max-width: 925px) {
+    .box_toggle {
+        flex-direction: column;
+        img {
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 50px;
+            width: 500px;
+            height: 338px;
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            justify-content: center;
+            h3 {
+                width: 15rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .galeria_recuadro {
         width: 300px;
         height: 2900px;
         transition-duration: 1s;
         transition-property: all;
     }
-    .img{
+    .galeria_recuadro_item {
         transition-duration: 1s;
         transition-property: all;
         margin-left: 10px;
     }
-    .img1{
+    .galeria_recuadro_uno {
         margin-top: 10px;
     }
-
-    .img2{
+    .galeria_recuadro_dos {
         margin-top: 244px;
     }
-    .img3{
+    .galeria_recuadro_tres {
         margin-top: 478px;
     }
-    .img4{
+    .galeria_recuadro_cuatro {
         margin-top: 712px;
     }
-    .img5{
+    .galeria_recuadro_cinco {
         margin-top: 946px;
     }
-    .img6{
+    .galeria_recuadro_seis {
         margin-top: 1180px;
     }
-    .img7{
+    .galeria_recuadro_siete {
         margin-top: 1414px;
     }
-    .img8{
+    .galeria_recuadro_ocho {
         margin-top: 1648px;
     }
-    .img9{
+    .galeria_recuadro_nueve {
         margin-top: 1882px;
     }
-    .img10{
+    .galeria_recuadro_diez {
         margin-top: 2116px;
     }
-    .img11{
+    .galeria_recuadro_once {
         margin-top: 2350px;
     }
-    .img12{
+    .galeria_recuadro_doce {
         margin-top: 2584px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .box_toggle {
+        img {
+            width: 300px;
+            height: 202px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        div{
+            width: 300px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .galeria__recuadro__img {
+        width: 232px;
+        height: 180px;
+    }
+    .galeria_recuadro_item {
+        position: absolute;
+        width: 232px;
+        height: 180px;
+    }
+    .galeria_recuadro_comida {
+        width: 232px;
+        height: 180px;
+    }
+    .galeria_recuadro {
+        width: 252px;
+        height: 2350px;
+    }
+    .galeria_recuadro_dos {
+        margin-top: 200px;
+    }
+    .galeria_recuadro_tres {
+        margin-top: 390px;
+    }
+    .galeria_recuadro_cuatro {
+        margin-top: 580px;
+    }
+    .galeria_recuadro_cinco {
+        margin-top: 770px;
+    }
+    .galeria_recuadro_seis {
+        margin-top: 960px;
+    }
+    .galeria_recuadro_siete {
+        margin-top: 1150px;
+    }
+    .galeria_recuadro_ocho {
+        margin-top: 1340px;
+    }
+    .galeria_recuadro_nueve {
+        margin-top: 1530px;
+    }
+    .galeria_recuadro_diez {
+        margin-top: 1720px;
+    }
+    .galeria_recuadro_once {
+        margin-top: 1910px;
+    }
+    .galeria_recuadro_doce {
+        margin-top: 2100px;
     }
 }

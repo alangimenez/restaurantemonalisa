@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
-    <meta name="description" content="Ups, parece que llegaste a una pagina de nuestro sitio que aún
-        no inauguramos. ¡Te invitamos a conocer nuestras otras secciones!">
+    <meta name="description" content="¿Estas interesado en un nuevo desafio profesional que impulse tu desarrollo como chef o cocinero? ¡Nosotros tenemos el desafio ideal para vos! Envianos tu CV, y ¡empeza a dar tu siguiente gran paso en tu carrera!">
+    <meta name="keyword" content="recursos humanos, entrevista, cv, curriculum, trabajo, desarrollo profesional, cocinero, chef">
     <meta name="author" content="Alan Gimenez">
     <title>Restaurante Monalisa - Ups...</title>
     <!-- Otros links -->
@@ -23,57 +23,59 @@
 
 <body>
     <div class="margin">
+
+        <!--Header-->
+
         <header>
-            <nav class="home__nav">
+            <nav>
 
-                <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                            y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                            un boton que desplega el menu para pantalla pequeña-->
+                <!--Menu general-->
 
-                <!--Primer menu-->
-
-                <div class="home__nav__section__four">
-                    <img src="imagenes/logoPagina.png" id="logoPagina">
+                <div class="header_logo">
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                    <h3>Restaurante Monalisa</h3>
                 </div>
-                <div class="home_nav_section_otros">
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__one" class="home__nav__section">
+                <div class="header_seccion">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="index.html">Inicio</a>
                         </div>
-                        <div id="home__nav__section__two" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="nosotros.html">Nosotros</a>
                         </div>
-                        <div id="home__nav__section__three" class="home__nav__section">
-                            <a href="menuv2.html">Cartas</a>
+                        <div class="header_seccion_interno_item">
+                            <a href="menu.html">Cartas</a>
                         </div>
-                        <div id="home__nav__section__five" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="galeria.html">Galeria</a>
                         </div>
                     </div>
-                    <div class="home_nav_section_otros_interno">
-                        <div id="home__nav__section__six" class="home__nav__section">
+                    <div class="header_seccion_interno">
+                        <div class="header_seccion_interno_item">
                             <a href="beneficios.html">Beneficios</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="reservaciones.html">Reservaciones</a>
                         </div>
-                        <div id="home__nav__section__seven" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="contacto.html">Contacto</a>
                         </div>
-                        <div id="home__nav__section__eight" class="home__nav__section">
+                        <div class="header_seccion_interno_item">
                             <a href="error.html">Idioma</a>
                         </div>
                     </div>
                 </div>
-                <!--Segundo menu-->
 
-                <div class="home__nav__section__eight" style="float:right;">
-                    <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
-                            id="menu__img"></button>
-                    <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                <!--Menu responsive-->
+
+                <div class="header_mobile" style="float:right;">
+                    <button class="header_mobile_boton">
+                        <img src="imagenes/iconoMenu.png" id="menu__img" alt="Menu">
+                    </button>
+                    <div class="header_mobile_links header_mobile_links-desplegable">
                         <a href="index.html">Inicio</a>
                         <a href="nosotros.html">Nosotros</a>
-                        <a href="menuv2.html">Cartas</a>
+                        <a href="menu.html">Cartas</a>
                         <a href="galeria.html">Galeria</a>
                         <a href="beneficios.html">Beneficios</a>
                         <a href="reservaciones.html">Reservaciones</a>
@@ -84,36 +86,52 @@
 
             </nav>
         </header>
+
+        <!--Contenido-->
+
         <section>
-
-            <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
-
-            <h2 class="rrhh_titulo">¿Estas interesado en trabajar con nosotros?<br>
-                ¡Envianos tu CV y te contactaremos!</h2>
-
-            <form class="form_cv">
-                <div class="form-group form-edit">
-                    <div class="col-12 col-12-manual">
-                        <input type="text" id="inputname" placeholder="Nombre y apellido">
+            <div class="titulo_caja">
+                <img src="imagenes/rrhh_img.jpg" alt="imagenFondo" class="titulo_img">
+                <h1 class="titulo_principal">Recursos humanos</h1>
+            </div>
+            <div class="rrhh_subtitulo">
+                <img src="imagenes/titulo2.png" alt="fondoTitulo" class="subtitulo_img">
+                <h2 class="subtitulo_texto">Envianos tu CV y trabaja con nosotros</h2>
+            </div>
+            <div class="uno"></div>
+            <div class="rrhh_texto">
+                <h4>¿Estas buscando un nuevo desafio profesional? ¡Tenemos una oportunidad para vos!</h4>
+                <p>En Restaurante Monalisa siempre estamos evaluando nuevos talentos para nuestro equipo. Si tu pasión
+                    es la
+                    cocina y queres ponerte a prueba en un lugar de excelencia, esta es tu oportunidad. Envianos tu CV
+                    completando el siguiente formulario, y nos pondremos en contacto con vos. ¡Te esperamos!</p>
+            </div>
+            <form class="rrhh_cv">
+                <div class="rrhh_edit">
+                    <div class="rrhh_box">
+                        <input type="text" id="inputname" placeholder="Nombre y apellido" class="rrhh_campo">
                     </div>
-                    <div class="col-12 col-12-manual">
-                        <input type="mail" id="inputname" placeholder="E-mail">
+                    <div class="rrhh_box">
+                        <input type="mail" id="inputmail" placeholder="E-mail" class="rrhh_campo">
                     </div>
-                    <div class="col-12 col-12-manual">
-                        <textarea id="inputTextoConsulta"
-                            placeholder="Si desea, puede realizar comentarios aquí"></textarea>
+                    <div class="rrhh_box">
+                        <textarea id="inputTextoConsulta" placeholder="Si desea, puede realizar comentarios aquí"
+                            class="rrhh_campo"></textarea>
                     </div>
-                    <label for="exampleFormControlFile1">CV a adjuntar</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    <div class="col-12 col-12-manual">
-                        <button type="submit" class="btn btn-primary border location__box__right__form__complete--color"
+                    <div class="rrhh_box_cv">
+                        <label for="exampleFormControlFile1">CV a adjuntar</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="rrhh_boton">
+                        <button type="submit" class="btn btn-primary border rrhh_boton-color"
                             id="buttonEnviar">Enviar</button>
                     </div>
-
                 </div>
             </form>
-
         </section>
+
+        <!--Footer-->
+
         <footer>
             <div class="footer">
                 <div>
@@ -129,7 +147,7 @@
                     <h3>Nuestras secciones</h3>
                     <a href="index.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="menuv2.html">Cartas</a>
+                    <a href="menu.html">Cartas</a>
                     <a href="galeria.html">Galeria</a>
                     <a href="beneficios.html">Beneficios</a>
                     <a href="reservaciones.html">Reservaciones</a>
@@ -138,16 +156,31 @@
                 <div style="display: flex; flex-direction: column;">
                     <h3>Institucional</h3>
                     <a href="rrhh.html">Recursos humanos</a>
-                    <a href="error.html">Prensa</a>
+                    <a href="prensa.html">Prensa</a>
                     <a href="franquicia.html">Franquicias</a>
+                    <input type="email" id="emailnews" placeholder="Ingrese aquí su e-mail" class="footer_newsletter">
+                    <button type="submit" id="suscribirse" class="btn btn-primary border footer_boton">Suscribirse a
+                        newsletter</button>
                 </div>
             </div>
             <div class="footer_mapasitio">
-                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_mapasitio_texto"
                         href="mapasitio.html">Mapa del sitio</a></p>
             </div>
         </footer>
     </div>
+
+    <!--Enlaces Bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script src="libreria/wow.min.js"></script>
     <script>
         new WOW().init();

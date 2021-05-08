@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags requeridos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Nuestra carta esta compuesta de entradas, platos principales y postres,
+    con una gran variedad de bebidas para acompañar, incluyendo nuestra vinoteca para quien gusta disfrutar
+    de un buen vino. También tenemos opciones para celiacos, vegetarianos/veganos y opciones para los mas chicos. ">
+    <meta name="keyword" content="comida, carnes asados, pastas, celiaco, vegano, vegetariano, vinoteca, postres, ">
+    <meta name="author" content="Alan Gimenez">
+    <title>Restaurante Monalisa - Nuestra carta</title>
+    <!-- Otros links -->
+    <link href="imagenes/iconoMini.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="margin">
+        <!--Menu-->
+        <!--El menu es un carrousel de 5 tablas que muestran las diferentes partes de una carta.
+            No tiene adaptaciones por tamaño de pantalla por el momento (probar mirarlo desde un celular
+            y ver como se ve)-->
+
+        <section>
+            <!--Header-->
+
+            
+            <header>
+                <nav class="home__nav">
+    
+                    <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
+                                y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
+                                un boton que desplega el menu para pantalla pequeña-->
+    
+                    <!--Primer menu-->
+    
+                    <div class="home__nav__section__four">
+                        <img src="imagenes/logoPagina.png" id="logoPagina">
+                    </div>
+                    <div class="home_nav_section_otros">
+                        <div class="home_nav_section_otros_interno">
+                            <div id="home__nav__section__one" class="home__nav__section">
+                                <a href="index.html">Inicio</a>
+                            </div>
+                            <div id="home__nav__section__two" class="home__nav__section">
+                                <a href="nosotros.html">Nosotros</a>
+                            </div>
+                            <div id="home__nav__section__three" class="home__nav__section">
+                                <a href="menu.html">Cartas</a>
+                            </div>
+                            <div id="home__nav__section__five" class="home__nav__section">
+                                <a href="galeria.html">Galeria</a>
+                            </div>
+                        </div>
+                        <div class="home_nav_section_otros_interno">
+                            <div id="home__nav__section__six" class="home__nav__section">
+                                <a href="error.html">Beneficios</a>
+                            </div>
+                            <div id="home__nav__section__eight" class="home__nav__section">
+                                <a href="contacto.html">Reservaciones</a>
+                            </div>
+                            <div id="home__nav__section__seven" class="home__nav__section">
+                                <a href="contacto.html">Contacto</a>
+                            </div>
+                            <div id="home__nav__section__eight" class="home__nav__section">
+                                <a href="contacto.html">Idioma</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Segundo menu-->
+    
+                    <div class="home__nav__section__eight" style="float:right;">
+                        <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
+                                id="menu__img"></button>
+                        <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+                            <a href="index.html">Inicio</a>
+                            <a href="nosotros.html">Nosotros</a>
+                            <a href="menu.html">Cartas</a>
+                            <a href="galeria.html">Galeria</a>
+                            <a href="error.html">Beneficios</a>
+                            <a href="contacto.html">Contacto</a>
+                            <a href="reservaciones.html">Reservaciones</a>
+                        </div>
+                    </div>
+    
+                </nav>
+            </header>
+                    <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!--Carta de entradas-->
+
+                    <div class="carousel-item active">
+                        <h1 class="carousel__title" style="color: white">Entradas</h1>
+                        <table class="carousel__table">
+                            <tr>
+                                <td class="carousel__table__column1">Entrada 1</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                                <td class="carousel__table__column3"></td>
+                                <td class="carousel__table__column1">Entrada 2</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de entrada 1</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de entrada 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Entrada 3</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Entrada 4</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de entrada 3</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de entrada 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Entrada 5</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Entrada 6</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de entrada 5</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de entrada 6</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Entrada 7</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Entrada 8</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de entrada 7</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de entrada 8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Entrada 9</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Entrada 10</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de entrada 9</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de entrada 10</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Carta de platos principales-->
+
+                    <div class="carousel-item">
+                        <h2 class="carousel__title">Plato principal</h2>
+                        <table>
+                            <tr>
+                                <td class="carousel__table__column1">Plato principal 1</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                                <td class="carousel__table__column3"></td>
+                                <td class="carousel__table__column1">Plato principal 2</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de plato principal 1</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de plato principal 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Plato principal 3</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Plato principal 4</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Plato principal 3</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Plato principal 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Plato principal 5</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Plato principal 6</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Plato principal 5</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Plato principal 6</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Plato principal 7</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Plato principal 8</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Plato principal 7</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Plato principal 8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Plato principal 9</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Plato principal 10</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Plato principal 9</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Plato principal 10</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Carta de postres-->
+
+                    <div class="carousel-item">
+                        <h2 class="carousel__title">Postres</h2>
+                        <table>
+                            <tr>
+                                <td class="carousel__table__column1">Postre 1</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                                <td class="carousel__table__column3"></td>
+                                <td class="carousel__table__column1">Postre 2</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Postre 1</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Postre 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Postre 3</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Postre 4</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Postre 3</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Postre 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Postre 5</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Postre 6</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Postre 5</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Postre 6</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Postre 7</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Postre 8</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Postre 7</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Postre 8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Postre 9</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Postre 10</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Postre 9</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Postre 10</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Carta de bebidas-->
+
+                    <div class="carousel-item">
+                        <h2 class="carousel__title">Bebidas</h2>
+                        <table>
+                            <tr>
+                                <td class="carousel__table__column1">Bebida 1</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                                <td class="carousel__table__column3"></td>
+                                <td class="carousel__table__column1">Bebida 2</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Bebida 1</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Bebida 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Bebida 3</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Bebida 4</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Bebida 3</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Bebida 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Bebida 5</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Bebida 6</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Bebida 5</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Bebida 6</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Bebida 7</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Bebida 8</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Bebida 7</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Bebida 8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Bebida 9</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Bebida 10</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Bebida 9</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Bebida 10</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Carta de vinos-->
+
+                    <div class="carousel-item">
+                        <h2 class="carousel__title">Vinos</h2>
+                        <table>
+                            <tr>
+                                <td class="carousel__table__column1">Vino 1</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                                <td class="carousel__table__column3"></td>
+                                <td class="carousel__table__column1">Vino 2</td>
+                                <td class="carousel__table__column2">$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Vino 1</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Vino 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Vino 3</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Vino 4</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Vino 3</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Vino 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Vino 5</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Vino 6</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Vino 5</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Vino 6</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Vino 7</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Vino 8</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Vino 7</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Vino 8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Vino 9</td>
+                                <td>$999,99</td>
+                                <td></td>
+                                <td class="carousel__table__column1">Vino 10</td>
+                                <td>$999,99</td>
+                            </tr>
+                            <tr>
+                                <td class="carousel__table__column1">Descripción de Vino 9</td>
+                                <td></td>
+                                <td></td>
+                                <td class="carousel__table__column1">Descripcion de Vino 10</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div>
+                    <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Dirección: Avenida 9 de Julio s/n</p>
+                    <p>Teléfono: 4444-7777</p>
+                    <p>Email: contactenos@monalisa.com.ar</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Nuestras secciones</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="menu.html">Cartas</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="error.html">Beneficios</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <h3>Institucional</h3>
+                    <a href="index.html">Recursos humanos</a>
+                    <a href="nosotros.html">Prensa</a>
+                    <a href="menu.html">Franquicias</a>
+                </div>
+            </div>
+            <div class="footer_mapasitio">
+                <p>Todos los derechos reservados. 2021. Creado por Alan Gimenez. <a class="footer_sitemap"
+                        href="mapasitio.html">Mapa del sitio</a></p>
+            </div>
+        </footer>    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,16 +1,19 @@
-.reservacion_titulo{
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+.reservas_subtitulo{
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2{
+        top: 35%;
+    }
 }
 .reservas_form{
     padding-left: 25%;
     padding-right: 25%;
-    background-color: black;
     margin: 0;
     padding-top: 3rem;
     padding-bottom: 4rem;
 }
-.reservas_form_items{
+.reservas_form_campo{
     border-bottom: grey 1px solid  !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -26,20 +29,27 @@
     color: white;
     margin-left: 0px;
 }
-.reservas_form_items_ambiente{
-    display: flex;
-    justify-content: space-between;
+.reservas_form_campo::placeholder{
     color: white;
 }
-.reservas_form_items_ambiente_box{
-    width: 50%;
+.reservas_form_campo:focus{
+    box-shadow: 0 0 1rem 0.25rem   black;
+    outline: none;
 }
-.reservas_form_submit{
-    background-color: white;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
+.reservas_form_boton{
+    background-color: black;
+    color: white !important;
 }
-.reservas_form_submit:hover{
-    background-color: green;
+
+@media only screen and (max-width: 600px){
+    .reservas_form{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .reservas_form{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

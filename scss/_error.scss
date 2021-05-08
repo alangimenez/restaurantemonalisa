@@ -1,14 +1,24 @@
-.construccion{
+.construccion {
     width: 40%;
     height: auto;
 }
-section{
-    h1{
+section {
+    h1 {
         padding-top: 3rem;
         padding-bottom: 2rem;
     }
-    h3{
+    h3 {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+}
+.error_link {
+    color: black;
+}
+.error_link:hover {
+    color: black;
+}
+.error_texto{
+    margin-left: 5%;
+    margin-right: 5%;
 }

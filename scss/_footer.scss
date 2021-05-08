@@ -2,67 +2,75 @@
 /*------------------------footer----------------------------------*/
 /*----------------------------------------------------------------*/
 
-footer{
+footer {
     background-color: black;
     color: white;
-    height: 20rem;
+    height: 20.5rem;
     align-items: center;
     border-bottom-left-radius: 42px;
     border-bottom-right-radius: 42px;
-    a{
-        color: white; 
+    transition: 2s;
+    a {
+        color: white;
         transition: 1s;
     }
-    a:hover{
-        transform: scale(1.20, 1.20);
+    a:hover {
+        transform: scale(1.2, 1.2);
         transition: 1s;
         text-decoration: none;
     }
-    h3{
+    h3 {
         padding-bottom: 1rem !important;
         padding-top: 1rem !important;
     }
 }
-
-
-.location__box__right__social{
-    width: 3.5rem;
-    height: 3.5rem;
-}
-h4{
-    font-size: 24px !important;
-    margin-bottom: 2px !important;
-    text-decoration: underline;
-    margin-top: 16px;
-    margin-bottom: 16px !important;
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    li{
-        display: inline-block;
-        margin-left: 10px;
-        margin-top: 5px;
-        color: white;
-    }
-}
-.footer_sitemap{
-    text-decoration: underline;
-}
-.footer_mapasitio{
+.footer_mapasitio {
     font-size: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-.footer{
+.footer_mapasitio_texto {
+    text-decoration: underline;
+}
+.footer {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-@media only screen and (max-width: 600px){
-    footer{
+.footer_newsletter {
+    font-size: 1rem;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.25rem;
+    margin-bottom: 0.6rem;
+    color: white;
+    text-align: center;
+}
+.footer_newsletter::placeholder {
+    color: white;
+    text-align: center;
+}
+.footer_boton {
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
-        height: 35rem;
+    }
+    footer {
+        height: 50.5rem;
+        -webkit-transition: 2s;
+        transition: 2s;
     }
 }

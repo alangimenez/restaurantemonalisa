@@ -7,6 +7,28 @@
     background-size: cover;
     background-position: center center;
 }
+.beneficio_img{
+    width: 100%;
+    height: auto;
+    filter: blur(3px);
+    transform: scale(1.02, 1.02);
+}
+.beneficio_img_box{
+    overflow: hidden;
+    position: relative; 
+    float: left;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 50px;
+        box-shadow: 0 0 1rem 0.75rem black;
+        color: white;
+    }
+}
 .beneficio__title{
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -88,6 +110,64 @@
     }
 }
 .beneficio__intern__img--format{
-    width: 50%;
-    height: 50%;
+    padding-top: 3rem;
+}
+.beneficio_intern_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.beneficio__intern__item_2{
+    width: 28%;
+}
+.beneficio_titulo{
+    white-space: nowrap;
+}
+@media only screen and (max-width: 925px){
+    .beneficio__intern{
+        display: grid;
+        grid-column: 2;
+        grid-row: 6;
+        grid-template-areas: 
+            "beneficio9 beneficio10"
+            "beneficio1 beneficio2"
+            "beneficio4 beneficio5" 
+            "beneficio11 beneficio12"
+            "beneficio3 beneficio7" 
+            "beneficio6 beneficio8";
+        grid-column-gap: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .beneficio__intern__item_2{
+        width: 35%;
+    }
+    .beneficio_titulo{
+        font-size: calc(1.2em + 1.2vw);
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .beneficio_titulo{ 
+        padding: 0.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .beneficio__intern__item_2{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .beneficio_titulo{
+        font-size: calc(1em + 1vw);
+        padding: 0.25rem !important;
+        transition: 1s;
+    }
 }

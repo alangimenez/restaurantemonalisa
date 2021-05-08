@@ -101,6 +101,9 @@
 .history_fotos_img{
     margin-top:2rem;
     margin-bottom: 2rem;
+    img{
+        border-radius: 50px;
+    }
 }
 .history_fotos_img_hover{
     opacity: 0%;
@@ -112,6 +115,7 @@
     transition: 1s;
     padding-left: 5%;
     padding-right: 5%;
+    border-radius: 50px;
 }
 .history_fotos_img_hover:hover{
     opacity: 100%;
@@ -125,20 +129,98 @@
     justify-content: space-evenly;
     padding-right: 5%;
     padding-left: 5%;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     padding-top: 2rem;
 }
 .history_principios_item{
     margin-left: 2%;
     margin-right: 2%;
-    background-color: rgb(231, 231, 231);
+    background-color: white;
     border-radius: 50px;
+    box-shadow: 0 0 1rem 0.15rem black;
 }
 .history_carousel{
     height: 5rem;
+    margin-bottom: 1.75rem;
     p{
-        font-size: 2rem;
+        font-size: calc(1.2em + 1.2vw);
         font-weight: bold;
         font-style: italic;
+    }
+}
+.nosotros_img_box{
+    @extend .img_caja;
+    h2{
+        top: 35%;
+    }
+}
+.nosotros_titulo{
+    white-space: nowrap;
+}
+@media only screen and (max-width: 800px){
+    .history_principios{
+        flex-direction: column;
+    }
+    .history_principios_item{
+        margin-bottom: 2rem;
+    }
+    .nosotros_titulo{
+        font-size: calc(1.2em + 1.2vw);
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .history_carousel{
+        p{
+            font-size: calc(1.0em + 1.0vw);
+            line-height: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .nosotros_titulo{
+        padding: 0.5rem !important;
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .history_fotos_img{
+        img{
+            width: 300px;
+            height: 525px;
+            transition: 1s;
+        }
+    }
+    .history_fotos_img_hover{
+        width: 300px;
+        height: 525px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .history_fotos_img{
+        img{
+            width: 225px;
+            height: 394px;
+            transition: 1s;
+        }
+    }
+    .history_fotos_img_hover{
+        width: 225px;
+        height: 394px;
+        h3{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin: 0;
+        }
+        p{
+            line-height: 17px;
+        }
+    }
+    .nosotros_titulo{
+        padding: 0.25rem !important;
+        transition: 1s;
     }
 }

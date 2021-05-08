@@ -1,0 +1,109 @@
+.prensa_subtitulo{
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2{
+        top: 35%;
+    }
+}
+.prensa_contenedor{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.prensa_contenedor_centro{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+.prensa_contenedor_centro_item{
+    width: 280px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    padding-top: 2%;
+    img{
+        width: 212.8px;
+        height: 165px;
+        border-radius: 50px;
+    }
+}
+.prensa_contenedor_centro_item:hover{
+    box-shadow: 0 0 1rem 0.15rem   black;
+}
+.prensa_paginas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 3rem;
+    div{
+        width: 26px;
+        border: 1px solid black;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+        a{
+            color: black;
+            font-weight: bold;
+        }
+    }
+    div:hover{
+        background-color: black;
+        a{
+            color: white;
+        }
+    }
+
+}
+.prensa_intermedio_subtitulo{
+    width: 90vw;
+    height: 20vw;
+    margin-bottom: 3rem;
+    @extend .titulo_caja;
+    h2{
+        top: 45%;
+    }
+}
+.prensa_input{
+    padding-bottom: 3rem;
+}
+.prensa_newsletter{
+    font-size: 1.2rem;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.prensa_newsletter::placeholder{
+    color: white;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.prensa_boton{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.prensa_boton:hover{
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (min-width: 1385px) {
+    .prensa_contenedor_centro{
+        width: 1115px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .prensa_newsletter{
+        width: 80%;
+    }
+}

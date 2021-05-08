@@ -26,60 +26,59 @@
 <body>
     <div class="margin">
         <section>
+
             <!--Header-->
 
-
             <header>
-                <nav class="home__nav">
-    
-                    <!--El menu de navegación está 2 veces. Primero con 7 divs para pantalla grande
-                                y mediana, que se juntan pero no se solapan ni se mueven a otra fila. Segundo es 
-                                un boton que desplega el menu para pantalla pequeña-->
-    
-                    <!--Primer menu-->
-    
-                    <div class="home__nav__section__four">
-                        <img src="imagenes/logoPagina.png" id="logoPagina">
+                <nav>
+
+                    <!--Menu general-->
+
+                    <div class="header_logo">
+                        <img src="imagenes/logoPagina.png" id="logoPagina" alt="Logo de la pagina">
+                        <h3>Restaurante Monalisa</h3>
                     </div>
-                    <div class="home_nav_section_otros">
-                        <div class="home_nav_section_otros_interno">
-                            <div id="home__nav__section__one" class="home__nav__section">
+                    <div class="header_seccion">
+                        <div class="header_seccion_interno">
+                            <div class="header_seccion_interno_item">
                                 <a href="index.html">Inicio</a>
                             </div>
-                            <div id="home__nav__section__two" class="home__nav__section">
+                            <div class="header_seccion_interno_item">
                                 <a href="nosotros.html">Nosotros</a>
                             </div>
-                            <div id="home__nav__section__three" class="home__nav__section">
-                                <a href="menuv2.html">Cartas</a>
+                            <div class="header_seccion_interno_item">
+                                <a href="menu.html">Cartas</a>
                             </div>
-                            <div id="home__nav__section__five" class="home__nav__section">
+                            <div class="header_seccion_interno_item">
                                 <a href="galeria.html">Galeria</a>
                             </div>
                         </div>
-                        <div class="home_nav_section_otros_interno">
-                            <div id="home__nav__section__six" class="home__nav__section">
+                        <div class="header_seccion_interno">
+                            <div class="header_seccion_interno_item">
                                 <a href="beneficios.html">Beneficios</a>
                             </div>
-                            <div id="home__nav__section__eight" class="home__nav__section">
+                            <div class="header_seccion_interno_item">
                                 <a href="reservaciones.html">Reservaciones</a>
                             </div>
-                            <div id="home__nav__section__seven" class="home__nav__section">
+                            <div class="header_seccion_interno_item">
                                 <a href="contacto.html">Contacto</a>
                             </div>
-                            <div id="home__nav__section__eight" class="home__nav__section">
+                            <div class="header_seccion_interno_item">
                                 <a href="error.html">Idioma</a>
                             </div>
                         </div>
                     </div>
-                    <!--Segundo menu-->
-    
-                    <div class="home__nav__section__eight" style="float:right;">
-                        <button class="home__nav__section__eight__btn"><img src="imagenes/iconoMenu.png"
-                                id="menu__img"></button>
-                        <div class="home__nav__section__eight__content home__nav__section__eight__content--desplegable">
+
+                    <!--Menu responsive-->
+
+                    <div class="header_mobile" style="float:right;">
+                        <button class="header_mobile_boton">
+                            <img src="imagenes/iconoMenu.png" id="menu__img" alt="Menu">
+                        </button>
+                        <div class="header_mobile_links header_mobile_links-desplegable">
                             <a href="index.html">Inicio</a>
                             <a href="nosotros.html">Nosotros</a>
-                            <a href="menuv2.html">Cartas</a>
+                            <a href="menu.html">Cartas</a>
                             <a href="galeria.html">Galeria</a>
                             <a href="beneficios.html">Beneficios</a>
                             <a href="reservaciones.html">Reservaciones</a>
@@ -87,111 +86,116 @@
                             <a href="error.html">Idioma</a>
                         </div>
                     </div>
-    
                 </nav>
             </header>
-                <img src="imagenes/fondoDesenfocar1.jpg" alt="imagenFondo" class="home1_img">
 
+            <!--Contenido-->
 
-            <!--Galeria de imagenes-->
-            <!--La galeria de imagenes solo debe contener algunas imagenes de comida. Es responsive a 
-        los 3 tamaños de pantalla, y se deben incluir animaciones-->
-
-            <section id="galeria" class="galeria">
-                <h1 class="galeria__titulo">Algunas imagenes de nuestra variada carta</h1>
-                <div class="galeria__recuadro">
-                    <div class="img img1">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida1</p>
+            <section class="galeria">
+                <div class="titulo_caja">
+                    <div>Imagen de fondo de seccion</div>
+                    <img src="imagenes/galeria_img.jpg" alt="Fondo de la sección" class="titulo_img">
+                    <h1 class="titulo_principal">Galeria de fotos</h1>
+                </div>
+                <div class="galeria_subtitulo">
+                    <img src="imagenes/titulo2.png" alt="Fondo del subtitulo" class="subtitulo_img">
+                    <h2 class="subtitulo_texto">Algunas imagenes de nuestra variada galeria</h2>
+                </div>
+                <div class="uno"></div>
+                <div class="galeria_recuadro">
+                    <div class="galeria_recuadro_item galeria_recuadro_uno">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_uno">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Asado a la parrilla</p>
                         </a>
-                        <img src="imagenes/comida12.jpg"
+                        <img src="imagenes/asado_original.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img2">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida2</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_dos">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_dos">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Ensalada vegana</p>
                         </a>
-                        <img src="imagenes/comida11.jpg"
+                        <img src="imagenes/vegano.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img3">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida3</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_tres">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_tres">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Salmon</p>
                         </a>
-                        <img src="imagenes/comida10.jpg"
+                        <img src="imagenes/salmon.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img4">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida4</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_cuatro">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_cuatro">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Pastas</p>
                         </a>
-                        <img src="imagenes/comida9.jpg"
+                        <img src="imagenes/pasta.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img5">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida5</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_cinco">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_cinco">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Vinos</p>
                         </a>
-                        <img src="imagenes/comida8.png"
+                        <img src="imagenes/vinos.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img6">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida6</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_seis">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_seis">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Milanesas con fritas</p>
                         </a>
-                        <img src="imagenes/comida7.jpg"
+                        <img src="imagenes/milanesa.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img7">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida7</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_siete">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_siete">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Tiramisu</p>
                         </a>
-                        <img src="imagenes/comida6.jpg"
+                        <img src="imagenes/tiramisu.png"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img8">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida8</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_ocho">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_ocho">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Hamburguesa vegetariana</p>
                         </a>
-                        <img src="imagenes/comida5.png"
+                        <img src="imagenes/hamburguesa vegetariana.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img9">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida9</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_nueve">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_nueve">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Picada de fiambres</p>
                         </a>
-                        <img src="imagenes/comida4.jpg"
+                        <img src="imagenes/picada.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img10">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida10</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_diez">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_diez">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Helado</p>
                         </a>
-                        <img src="imagenes/comida3.jpg"
+                        <img src="imagenes/helado.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img11">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida11</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_once">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_once">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Filete de cerdo</p>
                         </a>
-                        <img src="imagenes/comida2.jpg"
+                        <img src="imagenes/filete.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
-                    <div class="img img12">
-                        <a href data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="comida" data-wow-duration="1s">Comida12</p>
+                    <div class="galeria_recuadro_item galeria_recuadro_doce">
+                        <a href data-bs-toggle="modal" data-bs-target="#recuadro_doce">
+                            <p class="galeria_recuadro_comida" data-wow-duration="1s">Equipo de cocina</p>
                         </a>
-                        <img src="imagenes/comida1.jpg"
+                        <img src="imagenes/cocineros.jpg"
                             class="galeria__recuadro__img wow animate__animated animate__zoomIn" data-wow-duration="1s">
                     </div>
                 </div>
 
-                <!-- Modal para todos (provisorio) -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <!-- Modales-->
+
+                <div class="modal fade" id="recuadro_uno" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content box_toggle">
-                            <img src="imagenes/comida12.jpg" alt="Foto en tamaño mas grande">
+                            <img src="imagenes/asado_original.jpg" alt="Foto en tamaño mas grande">
                             <div>
                                 <h3>Nombre de la comida</h3>
                                 <p>Alguna breve descripción de la comida</p>
@@ -199,8 +203,142 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="modal fade" id="recuadro_dos" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/vegano.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_tres" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/salmon.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_cuatro" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/pasta.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_cinco" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/vinos.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_seis" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/milanesa.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_siete" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/tiramisu.png" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_ocho" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/hamburguesa vegetariana.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_nueve" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/picada.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_diez" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/helado.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_once" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/filete.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="recuadro_doce" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content box_toggle">
+                            <img src="imagenes/cocineros.jpg" alt="Foto en tamaño mas grande">
+                            <div>
+                                <h3>Nombre de la comida</h3>
+                                <p>Alguna breve descripción de la comida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <!--Footer-->
+
             <footer>
                 <div class="footer">
                     <div>
@@ -234,7 +372,7 @@
                             href="mapasitio.html">Mapa del sitio</a></p>
                 </div>
             </footer>
-        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
