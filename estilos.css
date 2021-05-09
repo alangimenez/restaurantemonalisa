@@ -22,7 +22,7 @@ a {
   overflow: hidden;
 }
 
-.titulo_caja, .nosotros_inicial_subtitulo, .nosotros_intermedio_subtitulo, .menu_inicial_subtitulo, .menu_intermedio_subtitulo, .galeria_subtitulo, .contacto_inicial_subtitulo, .contacto_intermedio_subtitulo, .mapasitio_subtitulo, .reservas_subtitulo, .rrhh_subtitulo, .franquicia_subtitulo, .prensa_subtitulo, .prensa_intermedio_subtitulo {
+.titulo_caja, .nosotros_inicial_subtitulo, .nosotros_intermedio_subtitulo, .menu_inicial_subtitulo, .menu_intermedio_subtitulo, .galeria_subtitulo, .beneficio_inicial_subtitulo, .beneficio_intermedio_subtitulo, .contacto_inicial_subtitulo, .contacto_intermedio_subtitulo, .mapasitio_subtitulo, .reservas_subtitulo, .rrhh_subtitulo, .franquicia_subtitulo, .prensa_subtitulo, .prensa_intermedio_subtitulo {
   overflow: hidden;
   position: relative;
   float: left;
@@ -30,7 +30,7 @@ a {
   height: 33vw;
 }
 
-.titulo_caja h1, .nosotros_inicial_subtitulo h1, .nosotros_intermedio_subtitulo h1, .menu_inicial_subtitulo h1, .menu_intermedio_subtitulo h1, .galeria_subtitulo h1, .contacto_inicial_subtitulo h1, .contacto_intermedio_subtitulo h1, .mapasitio_subtitulo h1, .reservas_subtitulo h1, .rrhh_subtitulo h1, .franquicia_subtitulo h1, .prensa_subtitulo h1, .prensa_intermedio_subtitulo h1, .titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
+.titulo_caja h1, .nosotros_inicial_subtitulo h1, .nosotros_intermedio_subtitulo h1, .menu_inicial_subtitulo h1, .menu_intermedio_subtitulo h1, .galeria_subtitulo h1, .beneficio_inicial_subtitulo h1, .beneficio_intermedio_subtitulo h1, .contacto_inicial_subtitulo h1, .contacto_intermedio_subtitulo h1, .mapasitio_subtitulo h1, .reservas_subtitulo h1, .rrhh_subtitulo h1, .franquicia_subtitulo h1, .prensa_subtitulo h1, .prensa_intermedio_subtitulo h1, .titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,7 +44,7 @@ a {
   color: white;
 }
 
-.titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
+.titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
   top: 35%;
 }
 
@@ -1123,50 +1123,16 @@ h1 {
   }
 }
 
-/*----------------------------------------------------------------*/
-/*-------------------beneficios para clientes---------------------*/
-/*----------------------------------------------------------------*/
-.beneficio {
-  background-image: url(imagenes/imgBencopy.jpg);
-  background-size: cover;
-  background-position: center center;
+.beneficio_inicial_subtitulo {
+  width: 90vw;
+  height: 18vw;
 }
 
-.beneficio_img {
-  width: 100%;
-  height: auto;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-  -webkit-transform: scale(1.02, 1.02);
-          transform: scale(1.02, 1.02);
+.beneficio_inicial_subtitulo h2 {
+  top: 35%;
 }
 
-.beneficio_img_box {
-  overflow: hidden;
-  position: relative;
-  float: left;
-}
-
-.beneficio_img_box h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 1rem 0.75rem black;
-          box-shadow: 0 0 1rem 0.75rem black;
-  color: white;
-}
-
-.beneficio__title {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-}
-
-.beneficio__intern {
+.beneficio_interno {
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 4;
@@ -1180,25 +1146,44 @@ h1 {
   padding-bottom: 4rem;
 }
 
-.beneficio__intern__item {
+.beneficio_interno_item {
   border-radius: 50px;
   padding: 1rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.beneficio__intern__item:hover {
+.beneficio_interno_item:hover {
   background-color: rgba(131, 131, 131, 0.514);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.beneficio__intern__title {
+.beneficio_interno_img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+.beneficio_interno_img h3 {
+  font-size: 4rem;
+  font-weight: 1500;
+}
+
+.beneficio_interno_img--format {
+  padding-top: 3rem;
+}
+
+.beneficio_interno_titulo {
   font-weight: bold;
   font-size: 20px;
 }
 
-.beneficio__intern__text {
+.beneficio_interno_texto {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
 }
@@ -1275,26 +1260,21 @@ h1 {
   grid-area: beneficio12;
 }
 
-.beneficio__intern__img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
+.beneficio_intermedio_subtitulo {
+  width: 90vw;
+  height: 20vw;
+  margin-bottom: 3rem;
 }
 
-.beneficio__intern__img h3 {
-  font-size: 4rem;
-  font-weight: 1500;
+.beneficio_intermedio_subtitulo h2 {
+  top: 45%;
 }
 
-.beneficio__intern__img--format {
-  padding-top: 3rem;
+.beneficio_interno_item_2 {
+  width: 28%;
 }
 
-.beneficio_intern_2 {
+.beneficio_interno_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1306,16 +1286,8 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.beneficio__intern__item_2 {
-  width: 28%;
-}
-
-.beneficio_titulo {
-  white-space: nowrap;
-}
-
 @media only screen and (max-width: 925px) {
-  .beneficio__intern {
+  .beneficio_interno {
     display: -ms-grid;
     display: grid;
     -ms-grid-column: 2;
@@ -1330,34 +1302,29 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
-  .beneficio__intern__item_2 {
+  .beneficio_interno_item_2 {
     width: 35%;
-  }
-  .beneficio_titulo {
-    font-size: calc(1.2em + 1.2vw);
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .beneficio_titulo {
-    padding: 0.5rem !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .beneficio__intern__item_2 {
+  .beneficio_interno_item_2 {
     width: 70%;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .beneficio_titulo {
-    font-size: calc(1em + 1vw);
-    padding: 0.25rem !important;
-    -webkit-transition: 1s;
-    transition: 1s;
+@media only screen and (max-width: 480px) {
+  .beneficio_interno {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 8;
+    grid-row: 8;
+        grid-template-areas: "beneficio9" "beneficio1"  "beneficio4" "beneficio10"  "beneficio2"  "beneficio5" "beneficio11"  "beneficio3" "beneficio6" "beneficio12"  "beneficio7"  "beneficio8";
+    grid-column-gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -1691,112 +1658,6 @@ footer h3 {
     height: 51.0rem;
     -webkit-transition: 2s;
     transition: 2s;
-  }
-}
-
-/*----------------------------------------------------------------*/
-/*---------------parte responsive pantalla mediana----------------*/
-/*----------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-  /*----------------------------------------------------------------*/
-  /*------------------------nuestra historia------------------------*/
-  /*----------------------------------------------------------------*/
-  #cuadrosHaV {
-    display: -ms-grid;
-    display: grid;
-    grid-column: 1fr 1fr;
-    -ms-grid-row: 1;
-    grid-row: 1;
-        grid-template-areas: "hist1 hist2 hist3";
-    padding-bottom: 4rem;
-  }
-  #hist {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .history__text__left__img {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  .history__text__left__explain {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #menu__img {
-    background-color: transparent !important;
-    width: 100%;
-  }
-}
-
-/*----------------------------------------------------------------*/
-/*---------------parte responsive pantalla chica----------------*/
-/*----------------------------------------------------------------*/
-@media only screen and (max-width: 480px) {
-  /*----------------------------------------------------------------*/
-  /*------------------------aplica a header-------------------------*/
-  /*----------------------------------------------------------------*/
-  /*----------------------------------------------------------------*/
-  /*------------------------nuestra historia------------------------*/
-  /*----------------------------------------------------------------*/
-  #hist {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .history__text__left__img {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  .history__text__left__explain {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .history__text__right {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 6;
-    grid-row: 6;
-        grid-template-areas: "valor1" "valor4" "valor2" "valor5" "valor3" "valor6";
-    grid-column-gap: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  /*----------------------------------------------------------------*/
-  /*------------------------beneficios------------------------------*/
-  /*----------------------------------------------------------------*/
-  .beneficio__intern {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 8;
-    grid-row: 8;
-        grid-template-areas: "beneficio9" "beneficio1"  "beneficio4" "beneficio10"  "beneficio2"  "beneficio5" "beneficio11"  "beneficio3" "beneficio6" "beneficio12"  "beneficio7"  "beneficio8";
-    grid-column-gap: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 }
 

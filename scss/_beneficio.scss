@@ -1,39 +1,12 @@
-/*----------------------------------------------------------------*/
-/*-------------------beneficios para clientes---------------------*/
-/*----------------------------------------------------------------*/
-
-.beneficio{
-    background-image: url(imagenes/imgBencopy.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-.beneficio_img{
-    width: 100%;
-    height: auto;
-    filter: blur(3px);
-    transform: scale(1.02, 1.02);
-}
-.beneficio_img_box{
-    overflow: hidden;
-    position: relative; 
-    float: left;
-    h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        border-radius: 50px;
-        box-shadow: 0 0 1rem 0.75rem black;
-        color: white;
+.beneficio_inicial_subtitulo{
+    width: 90vw;
+    height: 18vw;
+    @extend .titulo_caja;
+    h2{
+        top: 35%;
     }
 }
-.beneficio__title{
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-}
-.beneficio__intern{
+.beneficio_interno{
     display: grid;
     grid-column: 4;
     grid-row: 3;
@@ -46,20 +19,33 @@
     margin-right: 5%;
     padding-bottom: 4rem;
 }
-.beneficio__intern__item{
+.beneficio_interno_item{
     border-radius: 50px;
     padding: 1rem;
     transition: 1s;
 }
-.beneficio__intern__item:hover{
+.beneficio_interno_item:hover{
     background-color: rgba(131, 131, 131, 0.514);
     transition: 1s;
 }
-.beneficio__intern__title{
+.beneficio_interno_img{
+    justify-self: center;
+    align-self: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    h3{
+        font-size: 4rem;
+        font-weight: 1500;
+    }
+}
+.beneficio_interno_img--format{
+    padding-top: 3rem;
+}
+.beneficio_interno_titulo{
     font-weight: bold;
     font-size: 20px;
 }
-.beneficio__intern__text{
+.beneficio_interno_texto{
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
@@ -99,33 +85,27 @@
 #beneficio12{
     grid-area: beneficio12;
 }
-.beneficio__intern__img{
-    justify-self: center;
-    align-self: center;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    h3{
-        font-size: 4rem;
-        font-weight: 1500;
+.beneficio_intermedio_subtitulo{
+    width: 90vw;
+    height: 20vw;
+    margin-bottom: 3rem;
+    @extend .titulo_caja;
+    h2{
+        top: 45%;
     }
 }
-.beneficio__intern__img--format{
-    padding-top: 3rem;
+.beneficio_interno_item_2{
+    width: 28%;
 }
-.beneficio_intern_2{
+.beneficio_interno_2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
-.beneficio__intern__item_2{
-    width: 28%;
-}
-.beneficio_titulo{
-    white-space: nowrap;
-}
+
 @media only screen and (max-width: 925px){
-    .beneficio__intern{
+    .beneficio_interno{
         display: grid;
         grid-column: 2;
         grid-row: 6;
@@ -141,33 +121,37 @@
         margin-right: 5%;
     }
 }
-
 @media only screen and (max-width: 800px){
-    .beneficio__intern__item_2{
+    .beneficio_interno_item_2{
         width: 35%;
     }
-    .beneficio_titulo{
-        font-size: calc(1.2em + 1.2vw);
-        transition: 1s;
-    }
 }
-
-@media only screen and (max-width: 600px){
-    .beneficio_titulo{ 
-        padding: 0.5rem !important;
-    }
-}
-
 @media only screen and (max-width: 500px){
-    .beneficio__intern__item_2{
+    .beneficio_interno_item_2{
         width: 70%;
     }
 }
-
-@media only screen and (max-width: 400px){
-    .beneficio_titulo{
-        font-size: calc(1em + 1vw);
-        padding: 0.25rem !important;
-        transition: 1s;
+@media only screen and (max-width: 480px){
+    .beneficio_interno{
+        display: grid;
+        grid-column: 1;
+        grid-row: 8;
+        grid-template-areas: 
+            "beneficio9"
+            "beneficio1" 
+            "beneficio4"
+            "beneficio10" 
+            "beneficio2" 
+            "beneficio5"
+            "beneficio11" 
+            "beneficio3"
+            "beneficio6"
+            "beneficio12" 
+            "beneficio7" 
+            "beneficio8";
+        grid-column-gap: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
+
