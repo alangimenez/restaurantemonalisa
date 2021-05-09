@@ -7,8 +7,8 @@
     }
 }
 .sitemap_caja {
-    display: flex;
     justify-content: space-evenly;
+    padding-left: 3rem;
 }
 .sitemap_subtitulo {
     text-align: left;
@@ -24,6 +24,9 @@
         a {
             color: black;
         }
+        a:hover{
+            font-weight: bold;
+            color: blue;        }
     }
 }
 
