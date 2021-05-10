@@ -335,6 +335,9 @@ header {
   padding-top: 10%;
   padding-bottom: 50%;
   margin-bottom: 0;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0em 0em 0.2em white;
 }
 
 h1 {
