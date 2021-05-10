@@ -22,7 +22,7 @@ a {
   overflow: hidden;
 }
 
-.titulo_caja, .nosotros_inicial_subtitulo, .nosotros_intermedio_subtitulo, .menu_inicial_subtitulo, .menu_intermedio_subtitulo, .galeria_subtitulo, .beneficio_inicial_subtitulo, .beneficio_intermedio_subtitulo, .contacto_inicial_subtitulo, .contacto_intermedio_subtitulo, .mapasitio_subtitulo, .reservas_subtitulo, .rrhh_subtitulo, .franquicia_subtitulo, .prensa_subtitulo, .prensa_intermedio_subtitulo {
+.titulo_caja, .home_inicial_subtitulo, .home_intermedio_subtitulo, .nosotros_inicial_subtitulo, .nosotros_intermedio_subtitulo, .menu_inicial_subtitulo, .menu_intermedio_subtitulo, .galeria_subtitulo, .beneficio_inicial_subtitulo, .beneficio_intermedio_subtitulo, .contacto_inicial_subtitulo, .contacto_intermedio_subtitulo, .mapasitio_subtitulo, .reservas_subtitulo, .rrhh_subtitulo, .franquicia_subtitulo, .prensa_subtitulo, .prensa_intermedio_subtitulo {
   overflow: hidden;
   position: relative;
   float: left;
@@ -30,7 +30,7 @@ a {
   height: 33vw;
 }
 
-.titulo_caja h1, .nosotros_inicial_subtitulo h1, .nosotros_intermedio_subtitulo h1, .menu_inicial_subtitulo h1, .menu_intermedio_subtitulo h1, .galeria_subtitulo h1, .beneficio_inicial_subtitulo h1, .beneficio_intermedio_subtitulo h1, .contacto_inicial_subtitulo h1, .contacto_intermedio_subtitulo h1, .mapasitio_subtitulo h1, .reservas_subtitulo h1, .rrhh_subtitulo h1, .franquicia_subtitulo h1, .prensa_subtitulo h1, .prensa_intermedio_subtitulo h1, .titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
+.titulo_caja h1, .home_inicial_subtitulo h1, .home_intermedio_subtitulo h1, .nosotros_inicial_subtitulo h1, .nosotros_intermedio_subtitulo h1, .menu_inicial_subtitulo h1, .menu_intermedio_subtitulo h1, .galeria_subtitulo h1, .beneficio_inicial_subtitulo h1, .beneficio_intermedio_subtitulo h1, .contacto_inicial_subtitulo h1, .contacto_intermedio_subtitulo h1, .mapasitio_subtitulo h1, .reservas_subtitulo h1, .rrhh_subtitulo h1, .franquicia_subtitulo h1, .prensa_subtitulo h1, .prensa_intermedio_subtitulo h1, .titulo_caja h2, .home_inicial_subtitulo h2, .home_intermedio_subtitulo h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,7 +44,7 @@ a {
   color: white;
 }
 
-.titulo_caja h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
+.titulo_caja h2, .home_inicial_subtitulo h2, .home_intermedio_subtitulo h2, .nosotros_inicial_subtitulo h2, .nosotros_intermedio_subtitulo h2, .menu_inicial_subtitulo h2, .menu_intermedio_subtitulo h2, .galeria_subtitulo h2, .beneficio_inicial_subtitulo h2, .beneficio_intermedio_subtitulo h2, .contacto_inicial_subtitulo h2, .contacto_intermedio_subtitulo h2, .mapasitio_subtitulo h2, .reservas_subtitulo h2, .rrhh_subtitulo h2, .franquicia_subtitulo h2, .prensa_subtitulo h2, .prensa_intermedio_subtitulo h2 {
   top: 35%;
 }
 
@@ -400,38 +400,55 @@ h1 {
 }
 
 .home_intro h3 {
-  padding-top: 4rem;
   padding-bottom: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .home_seccion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .home_seccion_img {
   width: 50%;
 }
 
+.home_seccion_img img {
+  width: 100%;
+  border-radius: 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.home_seccion_img img:hover {
+  -webkit-box-shadow: 0 0 1rem 0.25rem black;
+          box-shadow: 0 0 1rem 0.25rem black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .home_seccion_texto {
   width: 50%;
   padding-left: 10%;
   padding-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .home_seccion_texto h3 {
   display: inline;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   border-radius: 50px;
   -webkit-box-shadow: 0 0 1rem 0.25rem black;
           box-shadow: 0 0 1rem 0.25rem black;
 }
 
-.home_seccion_texto p {
+.home_seccion_texto h5 {
   margin-top: 1rem;
 }
 
@@ -482,9 +499,89 @@ h1 {
   transition: 0.5s;
 }
 
+.home_inicial_subtitulo {
+  width: 90vw;
+  height: 18vw;
+  margin-bottom: 3rem;
+}
+
+.home_inicial_subtitulo h2 {
+  top: 35%;
+}
+
+.home_intermedio_subtitulo {
+  width: 90vw;
+  height: 20vw;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.home_intermedio_subtitulo h2 {
+  top: 45%;
+}
+
+.home_institucional_item {
+  margin-bottom: 3rem;
+}
+
+.home_institucional_item img {
+  margin-top: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.home_institucional_item:hover img {
+  -webkit-box-shadow: 0 0 1rem 0.15rem black;
+          box-shadow: 0 0 1rem 0.15rem black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 @media only screen and (min-width: 2200px) {
   .margin {
     width: 1976px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home_seccion_texto {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home_institucional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home_institucional_item h4 {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home_seccion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .home_seccion_img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home_seccion_texto {
     margin-left: auto;
     margin-right: auto;
   }
@@ -605,6 +702,10 @@ h1 {
 .subtitulo_texto_h3 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.nosotros_historia {
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 800px) {
