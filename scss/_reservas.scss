@@ -30,13 +30,17 @@
     margin-left: 0px;
 }
 .reservas_form_campo::placeholder{
-    color: white;
+    color: white !important;
 }
 .reservas_form_campo:focus{
     box-shadow: 0 0 1rem 0.25rem   black;
     outline: none;
 }
 .reservas_form_boton{
+    background-color: white;
+    color: black !important;
+}
+.reservas_form_boton:hover{
     background-color: black;
     color: white !important;
 }

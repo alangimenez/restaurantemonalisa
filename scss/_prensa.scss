@@ -78,12 +78,16 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: white;
+    border-radius: 0.70rem;
 }
 .prensa_newsletter::placeholder{
     color: white;
     padding-left: 0.5rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+}
+.prensa_newsletter:focus{
+    outline: none;
 }
 .prensa_boton{
     background-color: white;

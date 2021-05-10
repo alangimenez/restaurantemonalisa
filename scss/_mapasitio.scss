@@ -7,8 +7,9 @@
     }
 }
 .sitemap_caja {
-    justify-content: space-evenly;
-    padding-left: 3rem;
+    margin-right: auto; 
+    margin-left: auto;
+    display: inline-block;
 }
 .sitemap_subtitulo {
     text-align: left;
@@ -17,7 +18,7 @@
 .sitemap_list {
     list-style-type: none;
     display: block;
-    text-align: left;
+    text-align: center;
     margin-bottom: 4rem;
     padding-left: 0;
     li {

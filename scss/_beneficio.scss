@@ -25,7 +25,7 @@
     transition: 1s;
 }
 .beneficio_interno_item:hover{
-    background-color: rgba(131, 131, 131, 0.514);
+    box-shadow: 0 0 1rem 0.15rem black;
     transition: 1s;
 }
 .beneficio_interno_img{
@@ -96,6 +96,12 @@
 }
 .beneficio_interno_item_2{
     width: 28%;
+    transition: 1s;
+    border-radius: 30px;
+}
+.beneficio_interno_item_2:hover{
+    box-shadow: 0 0 1rem 0.15rem black;
+    transition: 1s;
 }
 .beneficio_interno_2{
     display: flex;

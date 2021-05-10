@@ -580,10 +580,14 @@ h1 {
   .home_seccion_img {
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
   .home_seccion_texto {
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
   }
 }
 
@@ -676,7 +680,7 @@ h1 {
   margin-left: 2%;
   margin-right: 2%;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1262,7 +1266,8 @@ h1 {
 }
 
 .beneficio_interno_item:hover {
-  background-color: rgba(131, 131, 131, 0.514);
+  -webkit-box-shadow: 0 0 1rem 0.15rem black;
+          box-shadow: 0 0 1rem 0.15rem black;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1380,6 +1385,16 @@ h1 {
 
 .beneficio_interno_item_2 {
   width: 28%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 30px;
+}
+
+.beneficio_interno_item_2:hover {
+  -webkit-box-shadow: 0 0 1rem 0.15rem black;
+          box-shadow: 0 0 1rem 0.15rem black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .beneficio_interno_2 {
@@ -1725,6 +1740,7 @@ footer h3 {
   margin-bottom: 0.6rem;
   color: white;
   text-align: center;
+  border-radius: 0.70rem;
 }
 
 .footer_newsletter::-webkit-input-placeholder {
@@ -1753,6 +1769,11 @@ footer h3 {
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
+}
+
+.footer_boton:hover {
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1807,10 +1828,9 @@ section h3 {
 }
 
 .sitemap_caja {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-left: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
 }
 
 .sitemap_subtitulo {
@@ -1821,7 +1841,7 @@ section h3 {
 .sitemap_list {
   list-style-type: none;
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 4rem;
   padding-left: 0;
 }
@@ -1885,19 +1905,19 @@ section h3 {
 }
 
 .reservas_form_campo::-webkit-input-placeholder {
-  color: white;
+  color: white !important;
 }
 
 .reservas_form_campo:-ms-input-placeholder {
-  color: white;
+  color: white !important;
 }
 
 .reservas_form_campo::-ms-input-placeholder {
-  color: white;
+  color: white !important;
 }
 
 .reservas_form_campo::placeholder {
-  color: white;
+  color: white !important;
 }
 
 .reservas_form_campo:focus {
@@ -1907,6 +1927,11 @@ section h3 {
 }
 
 .reservas_form_boton {
+  background-color: white;
+  color: black !important;
+}
+
+.reservas_form_boton:hover {
   background-color: black;
   color: white !important;
 }
@@ -2178,6 +2203,7 @@ section h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: white;
+  border-radius: 0.70rem;
 }
 
 .prensa_newsletter::-webkit-input-placeholder {
@@ -2206,6 +2232,10 @@ section h3 {
   padding-left: 0.5rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+}
+
+.prensa_newsletter:focus {
+  outline: none;
 }
 
 .prensa_boton {
