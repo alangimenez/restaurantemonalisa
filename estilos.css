@@ -1254,7 +1254,9 @@ h1 {
   grid-column: 4;
   -ms-grid-row: 3;
   grid-row: 3;
-      grid-template-areas: "beneficio9 beneficio10 beneficio11 beneficio12" "beneficio1 beneficio2 beneficio3 beneficio7" "beneficio4 beneficio5 beneficio6 beneficio8";
+      grid-template-areas: "beneficio9 beneficio10 beneficio11 beneficio12"
+ "beneficio1 beneficio2 beneficio3 beneficio7"
+ "beneficio4 beneficio5 beneficio6 beneficio8";
   grid-column-gap: 5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -1302,79 +1304,103 @@ h1 {
 .beneficio_interno_texto {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #beneficio1 {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: beneficio1;
 }
 
 #beneficio2 {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: beneficio2;
 }
 
 #beneficio3 {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 3;
+  grid-column: 3;
   grid-area: beneficio3;
 }
 
 #beneficio4 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: beneficio4;
 }
 
 #beneficio5 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: beneficio5;
 }
 
 #beneficio6 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 3;
+  grid-column: 3;
   grid-area: beneficio6;
 }
 
 #beneficio7 {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 4;
+  grid-column: 4;
   grid-area: beneficio7;
 }
 
 #beneficio8 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 4;
+  grid-column: 4;
   grid-area: beneficio8;
 }
 
 #beneficio9 {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: beneficio9;
 }
 
 #beneficio10 {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: beneficio10;
 }
 
 #beneficio11 {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 3;
+  grid-column: 3;
   grid-area: beneficio11;
 }
 
 #beneficio12 {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 4;
+  grid-column: 4;
   grid-area: beneficio12;
 }
 
@@ -1422,7 +1448,12 @@ h1 {
     grid-column: 2;
     -ms-grid-row: 6;
     grid-row: 6;
-        grid-template-areas: "beneficio9 beneficio10" "beneficio1 beneficio2" "beneficio4 beneficio5"  "beneficio11 beneficio12" "beneficio3 beneficio7"  "beneficio6 beneficio8";
+        grid-template-areas: "beneficio9 beneficio10"
+ "beneficio1 beneficio2"
+ "beneficio4 beneficio5" 
+ "beneficio11 beneficio12"
+ "beneficio3 beneficio7" 
+ "beneficio6 beneficio8";
     grid-column-gap: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -1449,7 +1480,18 @@ h1 {
     grid-column: 1;
     -ms-grid-row: 8;
     grid-row: 8;
-        grid-template-areas: "beneficio9" "beneficio1"  "beneficio4" "beneficio10"  "beneficio2"  "beneficio5" "beneficio11"  "beneficio3" "beneficio6" "beneficio12"  "beneficio7"  "beneficio8";
+        grid-template-areas: "beneficio9"
+ "beneficio1" 
+ "beneficio4"
+ "beneficio10" 
+ "beneficio2" 
+ "beneficio5"
+ "beneficio11" 
+ "beneficio3"
+ "beneficio6"
+ "beneficio12" 
+ "beneficio7" 
+ "beneficio8";
     grid-column-gap: 5%;
     margin-left: 5%;
     margin-right: 5%;
